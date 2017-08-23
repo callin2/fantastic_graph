@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/lq.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.ts" afterPath="$PROJECT_DIR$/src/main.ts" />
     </list>
@@ -55,8 +54,8 @@
           <file leaf-file-name="main.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="20">
+                  <caret line="1" column="83" lean-forward="false" selection-start-line="1" selection-start-column="83" selection-end-line="1" selection-end-column="83" />
                   <folding />
                 </state>
               </provider>
@@ -316,7 +315,7 @@
       <workItem from="1503459097215" duration="1342000" />
       <workItem from="1503467800250" duration="6311000" />
       <workItem from="1503476407442" duration="1017000" />
-      <workItem from="1503518709872" duration="6303000" />
+      <workItem from="1503518709872" duration="6370000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -332,11 +331,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503525159620</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="query helper">
+      <created>1503525451006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1503525451006</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14973000" />
+    <option name="totallyTimeSpent" value="15040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="24" width="1920" height="2136" extended-state="4" />
@@ -370,7 +376,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="webpack init" />
-    <option name="LAST_COMMIT_MESSAGE" value="webpack init" />
+    <MESSAGE value="query helper" />
+    <option name="LAST_COMMIT_MESSAGE" value="query helper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -563,16 +570,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/style/dark.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -603,18 +610,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/lq.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="83" lean-forward="false" selection-start-line="1" selection-start-column="83" selection-end-line="1" selection-end-column="83" />
           <folding />
         </state>
       </provider>
