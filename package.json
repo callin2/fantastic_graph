@@ -16,5 +16,10 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^2.5.1",
     "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "cytoscape": "^3.2.1",
+    "d3": "^4.10.0",
+    "fontawesome": "^4.7.2"
   }
 }
