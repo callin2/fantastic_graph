@@ -1,9 +1,4 @@
 
-// https://medium.com/@sapegin/css-modules-with-typescript-and-webpack-6b221ebe5f10
-// import("style/dark.styl")
-require("./style/dark.styl");
-
-
 window.onload = function() {
     // var map = L.map('map', {
     //     center: [51.505, -0.09],
@@ -19,6 +14,7 @@ window.onload = function() {
     //     id: 'mapbox.streets'
     // }).addTo(map);
 
+    
 
 
     fetch('/data/data.json', {mode: 'no-cors'})
