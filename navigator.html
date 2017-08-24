@@ -29,6 +29,10 @@
             background-color: #2f3139;
             padding: 3px
         }
+
+        .mouseover {
+            cursor: pointer;
+        }
     </style>
     <link rel="stylesheet" href="ext/font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -143,6 +147,25 @@ function initEvent() {
 //            .update();
 
     });
+
+    cy.on('mouseover', 'node', ()=> {
+        console.log ('mouse over')
+        $('#graph').addClass('mouseover')
+    })
+    cy.on('mouseout', 'node', ()=> $('#graph').removeClass('mouseover'))
+
+
+//    cy.on('click','node', function(){
+//        var coll = cy.collection();
+//        coll = coll.add(this)
+//
+//        coll.remove()
+//
+//        console.log('node clicked', this );
+//
+////        console.log('node clicked', coll.children() );
+//    })
+
 }
 
 </script>
