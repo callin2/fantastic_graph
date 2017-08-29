@@ -29,9 +29,14 @@ class AgensGraphWidget extends EventSource{
     cy: any;
     layout: any;
     nodeColorScale: any;
+    nstyle: any;
+    estyle: any;
 
     constructor(domId:string | any) {
         super();
+
+        this.nstyle = {};
+        this.estyle = {};
 
         this.nodeColorScale = scaleLinear().domain([0,1]).range(['yellow','red']);
 
@@ -95,12 +100,6 @@ class AgensGraphWidget extends EventSource{
         }
 
         if(layoutName == 'preset') {
-
-            // cy.nodes().forEach((node)=>{
-            //     console.log(node.position)
-            //     return {x:0, y:0}
-            // });
-
             console.log('layoutName', layoutName)
             var xScale = scaleLinear().domain([0,0.5]).range([0,1000])
             var yScale = scaleLinear().domain([0,10]).range([-1000,0])
@@ -113,10 +112,10 @@ class AgensGraphWidget extends EventSource{
                     // return node.data().viz.position
                     return {
                         x: xScale(node.data().attributes.eigencentrality),
-                        y: yScale(node.data().attributes.degree)}
+                        y: yScale(node.data().attributes.degree)
+                    };
                 },
                 animate: true
-
             });
 
             this.layout.run()
@@ -124,8 +123,6 @@ class AgensGraphWidget extends EventSource{
             this.layout = this.cy.layout({name: layoutName})
             this.layout.run()
         }
-
-
     }
 
     setColorType(colorType: string) {
@@ -157,17 +154,18 @@ class AgensGraphWidget extends EventSource{
         }
     }
 
-    degreeSize(): any {
+    degreeSize() {
+        this.nstyle.width = (ele)=>{
+            return ele.degree(true)*5 + 5;
+        };
+
+        this.nstyle.height = (ele)=>{
+            return ele.degree(true)*5 + 5;
+        };
+
         var styleSheet = cytoscape.stylesheet()
             .selector('node')
-            .style({
-                'width': (ele)=>{
-                    ele.degree(true) + 5
-                },
-                'height': (ele)=>{
-                    ele.degree(true) + 5
-                }
-            });
+            .style(this.nstyle);
 
         this.cy.style(styleSheet).update();
     }
@@ -175,16 +173,17 @@ class AgensGraphWidget extends EventSource{
     centralitySize() {
         let centrality = this.cy.$().dcn({directed:true});
 
+        this.nstyle.width = (ele)=>{
+            return centrality.outdegree(ele) * 20
+        };
+
+        this.nstyle.height = (ele)=>{
+            return centrality.indegree(ele) * 20
+        };
+
         var styleSheet = cytoscape.stylesheet()
             .selector('node')
-            .style({
-                'width': (ele)=>{
-                    centrality.outdegree(ele) * 10
-                },
-                'height': (ele)=>{
-                    centrality.indegree(ele)  * 10
-                }
-            });
+            .style(this.nstyle);
 
         this.cy.style(styleSheet).update();
     }
@@ -193,14 +192,14 @@ class AgensGraphWidget extends EventSource{
     degreeColor(): any {
         console.log("degreeColor")
 
+        this.nstyle['background-color'] = (ele)=>{
+            console.log("ele.degree(true)", ele.degree(true), ele.position())
+            return this.nodeColorScale(ele.degree(true)/10)
+        };
+
         var styleSheet = cytoscape.stylesheet()
             .selector('node')
-            .style({
-                'background-color': (ele)=>{
-                    console.log("ele.degree(true)", ele.degree(true), ele.position())
-                    return this.nodeColorScale(ele.degree(true)/10)
-                }
-            })
+            .style(this.nstyle)
 
         this.cy.style(styleSheet).update();
     }
@@ -208,15 +207,13 @@ class AgensGraphWidget extends EventSource{
     centralityColor(io) {
         let centrality = this.cy.$().dcn({directed:true});
 
+        this.nstyle['background-color'] = (ele)=>{
+            return this.nodeColorScale(io == 'out' ? centrality.outdegree(ele) : centrality.indegree(ele))
+        };
+
         var styleSheet = cytoscape.stylesheet()
             .selector('node')
-            .style({
-                'background-color': (ele)=>{
-                    // let centrality = this.cy.$().dcn({root:ele, directed:true});
-                    // console.log("centrality", centrality)
-                    return this.nodeColorScale(io == 'out' ? centrality.outdegree(ele) : centrality.indegree(ele))
-                }
-            })
+            .style(this.nstyle)
 
         this.cy.style(styleSheet).update();
     }
