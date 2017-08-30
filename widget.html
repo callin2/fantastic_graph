@@ -14,6 +14,10 @@
             background-color: #373941;
         }
 
+        .toolbar:hover {
+            opacity: 1;
+        }
+
         .toolbar {
             position: fixed;
             top: 10px;
@@ -22,6 +26,7 @@
             /*height: 30px;*/
             border: solid #2f3139 thin;
             background-color: #2f3139;
+            opacity: 0.3;
             padding: 3px;
             z-index: 999;
         }
@@ -44,6 +49,8 @@
 <div class="toolbar">
 
     <button id="fit" class="fa fa-arrows-alt"></button>
+    <button id="zoomin" class="fa fa-plus-square-o"></button>
+    <button id="zoomout" class="fa fa-minus-square-o"></button>
 
     <label>data
         <select name="datafile">
@@ -87,6 +94,22 @@
 
         </select>
     </label>
+
+    <label>degree range
+        <input id="dgrange" type="range" min="0" max="10" step="1" >
+    </label>
+
+    <label>node select type
+        <select name="nodeselecttype">
+            <option value="node">node</option>
+            <option value="with_child">with_child</option>
+            <option value="with_neighbor">with_neighbor</option>
+            <option value="entire_cluster">entire_cluster</option>
+        </select>
+    </label>
+
+
+
 </div>
 <div class="graph" data-agens></div>
 

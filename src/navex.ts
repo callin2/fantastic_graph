@@ -23,7 +23,6 @@ class EventSource {
 }
 
 
-
 class AgensGraphWidget extends EventSource{
     domEl: any;
     cy: any;
@@ -31,6 +30,7 @@ class AgensGraphWidget extends EventSource{
     nodeColorScale: any;
     nstyle: any;
     estyle: any;
+    nodeSelectType: string;
 
     constructor(domId:string | any) {
         super();
@@ -49,8 +49,18 @@ class AgensGraphWidget extends EventSource{
         this.cy = cytoscape({
             container: this.domEl,
             style: [
-                {selector : 'edge', style:{width:1, 'target-arrow-shape':"triangle"}},
-                {selector : 'node', style:{width:20, height:10}},
+                {
+                    selector : 'edge',
+                    style:{
+                        width:3,
+                        'target-arrow-shape':"triangle",
+                        'target-arrow-color':"red",
+                        'curve-style' : 'bezier',
+                        'line-color' : 'green',
+                        'line-style' : 'solid',
+
+                    }
+                }
             ]
         });
     }
@@ -64,7 +74,8 @@ class AgensGraphWidget extends EventSource{
 
         fetch(fileUrl).then((res)=>{
             return res.text()
-        }).then(gexf.parse)
+        })
+        .then((text)=>gexf.parse(text))
         .then((graph)=>{
             console.log(graph);
             graph.nodes.forEach((n)=>{
@@ -83,7 +94,7 @@ class AgensGraphWidget extends EventSource{
                 })
             });
         }).then(()=>{
-            this.layout = this.cy.layout({name: 'circle', animate:true});
+            this.layout = this.cy.layout({name: 'cose'});
             this.layout.run()
         });
     }
@@ -126,7 +137,7 @@ class AgensGraphWidget extends EventSource{
     }
 
     setColorType(colorType: string) {
-        console.log('colorType', colorType);
+        // console.log('colorType ', colorType);
 
         switch(colorType) {
             case "degree":
@@ -142,7 +153,7 @@ class AgensGraphWidget extends EventSource{
     }
 
     setNodeSize(sizeBy: string) {
-        console.log('sizeBy', sizeBy);
+        // console.log('sizeBy', sizeBy);
 
         switch(sizeBy) {
             case "degree":
@@ -154,6 +165,12 @@ class AgensGraphWidget extends EventSource{
         }
     }
 
+    setNodeSelectType(nsType: string) {
+        this.nodeSelectType = nsType
+
+
+    }
+
     degreeSize() {
         this.nstyle.width = (ele)=>{
             return ele.degree(true)*5 + 5;
@@ -163,45 +180,49 @@ class AgensGraphWidget extends EventSource{
             return ele.degree(true)*5 + 5;
         };
 
-        var styleSheet = cytoscape.stylesheet()
-            .selector('node')
-            .style(this.nstyle);
 
-        this.cy.style(styleSheet).update();
+        console.log("this.cy.style()", this.cy.style())
+
+
+        this.cy.style()
+            .selector('node')
+            .style(this.nstyle)
+            .update();
+
     }
 
     centralitySize() {
         let centrality = this.cy.$().dcn({directed:true});
 
         this.nstyle.width = (ele)=>{
-            return centrality.outdegree(ele) * 20
+            return 5 + centrality.outdegree(ele) * 100
+            // return 30
         };
 
         this.nstyle.height = (ele)=>{
-            return centrality.indegree(ele) * 20
+            return 5 + centrality.indegree(ele) * 100
+            // return 30
         };
 
-        var styleSheet = cytoscape.stylesheet()
+        this.cy.style()
             .selector('node')
-            .style(this.nstyle);
-
-        this.cy.style(styleSheet).update();
+            .style(this.nstyle)
+            .update();
     }
 
 
     degreeColor(): any {
-        console.log("degreeColor")
+        // console.log("degreeColor")
 
         this.nstyle['background-color'] = (ele)=>{
-            console.log("ele.degree(true)", ele.degree(true), ele.position())
+            // console.log("ele.degree(true)", ele.degree(true), ele.position())
             return this.nodeColorScale(ele.degree(true)/10)
         };
 
-        var styleSheet = cytoscape.stylesheet()
+        this.cy.style()
             .selector('node')
             .style(this.nstyle)
-
-        this.cy.style(styleSheet).update();
+            .update();
     }
 
     centralityColor(io) {
@@ -211,11 +232,26 @@ class AgensGraphWidget extends EventSource{
             return this.nodeColorScale(io == 'out' ? centrality.outdegree(ele) : centrality.indegree(ele))
         };
 
-        var styleSheet = cytoscape.stylesheet()
+        this.cy.style()
             .selector('node')
             .style(this.nstyle)
+            .update();
+    }
 
-        this.cy.style(styleSheet).update();
+    setNodeDegreeMin(min: number) {
+        // this.cy.$((ele))
+        this.cy.nodes().forEach((n)=>{
+            if(n.degree() < min) {
+                n.style('display', 'none')
+                // n.addClass("selected")
+            }else {
+                n.style('display', '')
+                // n.removeClass("selected")
+            }
+        })
+
+        // this.cy.fit(this.cy.$(':selected'), 50)
+
     }
 
 }

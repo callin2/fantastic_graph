@@ -18,32 +18,58 @@ class DemoApp {
     private initEvnt() {
         var selElem = document.querySelector("select[name='datafile']")
         selElem.addEventListener('change',(evt)=>{
-            var url = document.querySelector("select[name='datafile'] option:checked")
+            var url = <HTMLInputElement>document.querySelector("select[name='datafile'] option:checked")
             this.gw.loadGexf(url.value)
         });
 
         var layoutElem = document.querySelector("select[name='layout']")
         layoutElem.addEventListener('change',(evt)=>{
-            var layout = document.querySelector("select[name='layout'] option:checked")
+            var layout = <HTMLInputElement>document.querySelector("select[name='layout'] option:checked")
             this.gw.setLayout(layout.value)
         });
 
         var colorElem = document.querySelector("select[name='coloring']")
         colorElem.addEventListener('change',(evt)=>{
-            var colorType = document.querySelector("select[name='coloring'] option:checked")
+            var colorType = <HTMLInputElement>document.querySelector("select[name='coloring'] option:checked")
             this.gw.setColorType(colorType.value)
         });
 
         var nsizeElem = document.querySelector("select[name='nsize']")
         nsizeElem.addEventListener('change',(evt)=>{
-            var nsize = document.querySelector("select[name='nsize'] option:checked")
+            var nsize = <HTMLInputElement>document.querySelector("select[name='nsize'] option:checked")
             this.gw.setNodeSize(nsize.value)
         });
+
+        var nsTypeElem = document.querySelector("select[name='nodeselecttype']")
+        nsTypeElem.addEventListener('change',(evt)=>{
+            var nsType = <HTMLInputElement>document.querySelector("select[name='nodeselecttype'] option:checked")
+            this.gw.setNodeSelectType(nsType.value)
+        });
+
 
         var fitBtn = document.getElementById('fit')
         fitBtn.addEventListener('click', ()=>{
             this.gw.cy.fit(50)
         });
+
+        var zoominBtn = document.getElementById('zoomin')
+        zoominBtn.addEventListener('click', ()=>{
+            this.gw.cy.zoom( this.gw.cy.zoom() * 1.2 )
+            // console.log(this.gw.cy.zoom());
+        });
+
+        var zoomoutBtn = document.getElementById('zoomout')
+        zoomoutBtn.addEventListener('click', ()=>{
+            this.gw.cy.zoom( this.gw.cy.zoom() * .8 )
+        });
+
+        var dgrangeBtn = document.getElementById('dgrange')
+        dgrangeBtn.addEventListener('change', ()=>{
+            console.log( dgrangeBtn['value'] );
+            this.gw.setNodeDegreeMin(dgrangeBtn['value'])
+        });
+
+
     }
 }
 

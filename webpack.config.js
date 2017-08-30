@@ -16,6 +16,9 @@ module.exports = {
     },
 
     devtool: 'source-map',
+    resolve: {
+        extensions: [ '.webpack.js', '.web.js', '.ts', '.js']
+    },
 
     module: {
         rules: [
@@ -26,10 +29,17 @@ module.exports = {
             {
                 test: /\.ts$/,
                 loader: 'ts-loader',
-                options: {
-                    transpileOnly: true
-                }
+                exclude: /node_modules/,
+                // options: {
+                //     transpileOnly: true
+                // }
             }
         ]
     },
+
+    node: {
+        fs: 'empty'
+    }
+
+
 };
