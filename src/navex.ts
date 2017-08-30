@@ -2,6 +2,7 @@ import * as cytoscape from "cytoscape"
 import {EventEmitter} from "eventemitter3"
 import * as gexf  from "gexf"
 import {scaleLinear} from "d3"
+import * as fa from "fontawesome"
 
 type ListenerFn = (...args: Array<any>) => void;
 
@@ -55,14 +56,27 @@ class AgensGraphWidget extends EventSource{
                         width:3,
                         'target-arrow-shape':"triangle",
                         'target-arrow-color':"red",
-                        'curve-style' : 'bezier',
-                        'line-color' : 'green',
+                        'curve-style' : 'segments',
                         'line-style' : 'solid',
-
+                    }
+                },{
+                    selector: 'node',
+                    style: {
+                        "text-valign": 'center',
+                        label: fa.youtube,
+                        "font-family": "FontAwesome"
                     }
                 }
             ]
         });
+
+        this.cy.on('click','node', (evt)=>{
+            this.nodeClickHandler(evt)
+        });
+
+        this.cy.userZoomingEnabled(false)
+        this.cy.boxSelectionEnabled(true)
+
     }
 
     setColorScale(fromColor, toColor) {
@@ -94,8 +108,9 @@ class AgensGraphWidget extends EventSource{
                 })
             });
         }).then(()=>{
-            this.layout = this.cy.layout({name: 'cose'});
-            this.layout.run()
+            this.setLayout('cose')
+            // this.layout = this.cy.layout({name: 'cose'});
+            // this.layout.run()
         });
     }
 
@@ -251,6 +266,43 @@ class AgensGraphWidget extends EventSource{
         })
 
         // this.cy.fit(this.cy.$(':selected'), 50)
+
+    }
+
+    nodeClickHandler(evt: any) {
+        console.log(evt.target[0].data().id)
+
+        setTimeout(()=>{
+            var d1Col = evt.target.neighborhood().neighborhood();
+            var d2Col= d1Col.union(d1Col.neighborhood());
+            d2Col.select()
+
+            console.log('zoom', this.cy.zoom())
+            console.log('pan', this.cy.pan())
+
+            console.log(d2Col.boundingBox())
+            console.log(d2Col.renderedBoundingBox())
+
+            this.cy.animation({
+                fit: {
+                    eles: d2Col,
+                    padding: 200
+                },
+                duration: 500
+            }).play()
+
+            // this.cy.fit(d2Col, 100)
+        },0)
+
+        // var rslt = this.cy.elements().bfs({
+        //     root:       evt.target,
+        //     directed:   false,
+        //     visit:      (v,e,u,i,d)=> d < 2
+        // })
+
+        // console.log( rslt )
+
+        // setTimeout(()=>{rslt.found.select()},0)
 
     }
 
