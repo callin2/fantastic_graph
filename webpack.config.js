@@ -15,7 +15,9 @@ module.exports = {
         publicPath: "/dist/"
     },
 
-    devtool: 'source-map',
+    // devtool: 'source-map',
+    // devtool: 'inline-source-map',
+    devtool: 'eval',
     resolve: {
         extensions: [ '.webpack.js', '.web.js', '.ts', '.js']
     },

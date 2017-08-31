@@ -69,7 +69,21 @@ class DemoApp {
             this.gw.setNodeDegreeMin(dgrangeBtn['value'])
         });
 
+        var groupBtn = document.getElementById('group')
+        groupBtn.addEventListener('click', ()=>{            
+            this.gw.groupSelectedNode()
+        });
 
+        var ungroupBtn = document.getElementById('ungroup')
+        ungroupBtn.addEventListener('click', ()=>{            
+            this.gw.ungroupSelectedNode()
+        });
+
+        var edgefindBtn = document.getElementById('edgefind')
+        edgefindBtn.addEventListener('click', ()=>{
+            // test only
+            this.gw._findCuttingEdge()
+        });
     }
 }
 

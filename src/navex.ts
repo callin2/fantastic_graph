@@ -3,8 +3,14 @@ import {EventEmitter} from "eventemitter3"
 import * as gexf  from "gexf"
 import {scaleLinear} from "d3"
 import * as fa from "fontawesome"
+import * as _ from "lodash"
 
 type ListenerFn = (...args: Array<any>) => void;
+
+
+const NODE_SIZE = 30;
+const EDGE_SIZE = 10;
+
 
 class EventSource {
     ee: EventEmitter;
@@ -23,7 +29,6 @@ class EventSource {
     }
 }
 
-
 class AgensGraphWidget extends EventSource{
     domEl: any;
     cy: any;
@@ -32,12 +37,14 @@ class AgensGraphWidget extends EventSource{
     nstyle: any;
     estyle: any;
     nodeSelectType: string;
+    grpIdx: number;
 
     constructor(domId:string | any) {
         super();
 
         this.nstyle = {};
         this.estyle = {};
+        this.grpIdx = 0;
 
         this.nodeColorScale = scaleLinear().domain([0,1]).range(['yellow','red']);
 
@@ -63,8 +70,14 @@ class AgensGraphWidget extends EventSource{
                     selector: 'node',
                     style: {
                         "text-valign": 'center',
-                        label: fa.youtube,
+                        label: fa['youtube'],
                         "font-family": "FontAwesome"
+                    }
+                },{
+                    selector: 'node.group',
+                    style: {
+                        "border-width": 2,
+                        "border-color": 'green'
                     }
                 }
             ]
@@ -74,8 +87,16 @@ class AgensGraphWidget extends EventSource{
             this.nodeClickHandler(evt)
         });
 
-        this.cy.userZoomingEnabled(false)
+        // this.cy.userZoomingEnabled(false)
         this.cy.boxSelectionEnabled(true)
+
+        this.cy.on('zoom',()=>{
+            // console.log(this.cy.zoom())
+        })
+
+        this.cy.on('unselect',()=>{
+            console.log('unselect')
+        })
 
     }
 
@@ -167,6 +188,116 @@ class AgensGraphWidget extends EventSource{
         }
     }
 
+    groupSelectedNode() {
+        // pre conditions
+        var selectedNodes = this.cy.$('node:selected')
+        var selectedEles= this.cy.$(':selected')
+        if(selectedNodes.size() < 2) return;
+
+
+        // add group node
+        var pos = selectedNodes.first().position()
+        var grpNode = this.cy.add({group:'nodes', data:{id:"grp"+this.grpIdx++, nodeType:'group'}, position: {x:pos.x, y:pos.y}})
+        grpNode.addClass('group');
+
+        // add group link
+        let cutEdge = this._findCuttingEdge(this.cy.$(':selected'));
+        cutEdge.forEach((ed)=>{
+            console.log('ed', ed.data())
+
+            if(selectedEles.contains(ed.source())) {
+                this.cy.add({
+                    group: "edges",
+                    data: {source: grpNode.id() , target: ed.target().id()}
+                })
+            }else {
+                this.cy.add({
+                    group: "edges",
+                    data: {target: grpNode.id() , source: ed.target().id()}
+                })
+            }
+        });
+
+
+
+
+        var grpPosition = grpNode.position()
+        selectedNodes.map((n)=>{
+            var nodePosition = n.position()
+            n.scratch({
+                dx: grpPosition.x - nodePosition.x ,
+                dy: grpPosition.y - nodePosition.y
+            })
+        });
+
+        selectedNodes.animate({
+            position: grpPosition,
+            duration: 300,
+            complete: _.once(()=>{
+                grpNode.scratch('subgraph', selectedNodes.remove())
+            })
+        });
+    }
+
+    _findCuttingEdge(eles) {
+        var nb = eles.neighborhood();
+        return nb.difference(eles).filter('edge')
+    }
+
+    ungroupSelectedNode() {
+
+        var selectedNodes = this.cy.$('node:selected')
+        if(selectedNodes.size() != 1) return;
+
+        var grpNode = selectedNodes.first()
+
+        var rmElem = grpNode.scratch('subgraph')
+
+        console.log('rmElem', rmElem)
+
+        var grpPosition = grpNode.position()
+
+        rmElem.forEach((n)=>{
+            if(n.isEdge()) return;
+            var delta = n.scratch()
+            n.position({x: grpPosition.x - delta.dx, y:grpPosition.y - delta.dy})
+        });
+
+        rmElem.restore()
+        grpNode.remove()
+    }
+
+
+    groupSelectedNode_old() {
+
+        console.log('groupSelectedNode')
+        var selectedNodes = this.cy.$('node:selected')
+        if(selectedNodes.size() < 2) return;
+
+        var newNodes = []
+        newNodes.push({group:'nodes', data:{id:"grp"+this.grpIdx++}, position: selectedNodes.first().position() })
+
+        var box = selectedNodes.renderedBoundingBox()
+        console.log('box', box)
+
+        this.cy.add({group:'nodes', data:{id:"grp"+this.grpIdx++}, position: {x: box.x1, y: box.y1} })
+
+        selectedNodes.forEach((n)=>{
+            // n.data('parentxx', newNodes[0].data.id);
+            var nd = n.data();
+            nd.parent = newNodes[0].data.id
+            newNodes.push({group:"nodes", data: nd})
+        })
+
+        console.log(JSON.stringify(newNodes))
+
+        var removedElem = selectedNodes.remove()
+        console.log(removedElem)
+        this.cy.add(newNodes)
+        removedElem.restore()
+    }
+
+
     setNodeSize(sizeBy: string) {
         // console.log('sizeBy', sizeBy);
 
@@ -178,6 +309,20 @@ class AgensGraphWidget extends EventSource{
                 this.centralitySize();
                 break;
         }
+    }
+
+    setAllNodeSize() {
+        this.nstyle.width = (ele) => {
+            return ele.degree(true) * 5 + 5;
+        };
+        this.nstyle.height = (ele) => {
+            return ele.degree(true) * 5 + 5;
+        };
+        console.log("this.cy.style()", this.cy.style());
+        this.cy.style()
+            .selector('node')
+            .style(this.nstyle)
+            .update();
     }
 
     setNodeSelectType(nsType: string) {
