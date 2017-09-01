@@ -45,19 +45,18 @@
     <link rel="stylesheet" href="ext/font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body id="app">
 <div class="toolbar">
 
-    <button id="fit" class="fa fa-arrows-alt"></button>
-    <button id="zoomin" class="fa fa-plus-square-o"></button>
-    <button id="zoomout" class="fa fa-minus-square-o"></button>
+    <button @click="fit" class="fa fa-arrows-alt"></button>
+    <button @click="zoomin"  class="fa fa-plus-square-o"></button>
+    <button @click="zoomout" class="fa fa-minus-square-o"></button>
 
-    <button id="group" class="fa fa-object-group"></button>
-    <button id="ungroup" class="fa fa-object-ungroup"></button>
-    <button id="edgefind" >edgefind</button>
+    <button @click="groupNode" class="fa fa-object-group"></button>
+    <button @click="ungroupNode" class="fa fa-object-ungroup"></button>
 
     <label>data
-        <select name="datafile">
+        <select @change="handleFileChange">
             <option value="">--------</option>
             <option value="/data/dh11.gexf">dh11.gexf</option>
             <option value="/data/photoviz dynamic.gexf">photoviz dynamic.gexf</option>
@@ -66,9 +65,8 @@
         </select>
     </label>
 
-
     <label>layout
-        <select name="layout">
+        <select @change="handleLayoutChange">
             <option value="">--------</option>
             <option value="null">null</option>
             <option value="random">random</option>
@@ -82,7 +80,7 @@
     </label>
 
     <label>color
-        <select name="coloring">
+        <select @change="handleColoring">
             <option value="">--------</option>
             <option value="degree">degree</option>
             <option value="centrality.out">centrality.out</option>
@@ -92,7 +90,7 @@
     </label>
 
     <label>node size
-        <select name="nsize">
+        <select @change="handleSize">
             <option value="">--------</option>
             <option value="degree">degree</option>
             <option value="centrality">centrality</option>
@@ -101,28 +99,23 @@
     </label>
 
     <label>degree range
-        <input id="dgrange" type="range" min="0" max="10" step="1" >
-    </label>
-
-    <label>node select type
-        <select name="nodeselecttype">
-            <option value="node">node</option>
-            <option value="with_child">with_child</option>
-            <option value="with_neighbor">with_neighbor</option>
-            <option value="entire_cluster">entire_cluster</option>
-        </select>
+        <input @change="degreeFilterChange" type="range" min="0" max="10" step="1" >
     </label>
 
 
-    
-    
+
+    <!--<label>node select type-->
+        <!--<select name="nodeselecttype">-->
+            <!--<option value="node">node</option>-->
+            <!--<option value="with_child">with_child</option>-->
+            <!--<option value="with_neighbor">with_neighbor</option>-->
+            <!--<option value="entire_cluster">entire_cluster</option>-->
+        <!--</select>-->
+    <!--</label>-->
 
 
 </div>
 <div class="graph" data-agens></div>
 
-<script>
-
-</script>
 </body>
 </html>

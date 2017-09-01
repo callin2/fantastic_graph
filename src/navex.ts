@@ -1,12 +1,12 @@
 import * as cytoscape from "cytoscape"
 import {EventEmitter} from "eventemitter3"
 import * as gexf  from "gexf"
-import {scaleLinear} from "d3"
+import * as d3 from "d3"
 import * as fa from "fontawesome"
 import * as _ from "lodash"
 
 type ListenerFn = (...args: Array<any>) => void;
-
+let scaleLinear = d3['scaleLinear']
 
 const NODE_SIZE = 30;
 const EDGE_SIZE = 10;
@@ -14,6 +14,7 @@ const EDGE_SIZE = 10;
 
 class EventSource {
     ee: EventEmitter;
+
 
     constructor() {
         this.ee = new EventEmitter();
@@ -38,6 +39,7 @@ class AgensGraphWidget extends EventSource{
     estyle: any;
     nodeSelectType: string;
     grpIdx: number;
+    neighborDepth: number;
 
     constructor(domId:string | any) {
         super();
@@ -90,9 +92,32 @@ class AgensGraphWidget extends EventSource{
         // this.cy.userZoomingEnabled(false)
         this.cy.boxSelectionEnabled(true)
 
-        this.cy.on('zoom',()=>{
-            // console.log(this.cy.zoom())
-        })
+        // node edge size 고장
+        this.cy.on('zoom_x',()=>{
+
+            var zoom = this.cy.zoom();
+            var nodeSize = 40 / zoom
+
+            if(nodeSize > 100) {
+                nodeSize = 100
+            }else if(nodeSize < 20) {
+                nodeSize = 20
+            }
+            var edgeSize = 3 / zoom
+
+            this.cy.batch(()=>{
+                this.cy.$('node').style({
+                    width: nodeSize,
+                    height: nodeSize,
+                    "font-size":nodeSize*0.7
+                });
+
+                this.cy.$('edge').style({
+                    width: edgeSize
+                })
+            });
+
+        });
 
         this.cy.on('unselect',()=>{
             console.log('unselect')
@@ -111,7 +136,7 @@ class AgensGraphWidget extends EventSource{
             return res.text()
         })
         .then((text)=>gexf.parse(text))
-        .then((graph)=>{
+        .then((graph: any)=>{
             console.log(graph);
             graph.nodes.forEach((n)=>{
                 n.id = 'n' + n.id;
@@ -217,9 +242,6 @@ class AgensGraphWidget extends EventSource{
                 })
             }
         });
-
-
-
 
         var grpPosition = grpNode.position()
         selectedNodes.map((n)=>{
@@ -415,18 +437,43 @@ class AgensGraphWidget extends EventSource{
     }
 
     nodeClickHandler(evt: any) {
-        console.log(evt.target[0].data().id)
+        console.log(evt)
+        let targetNode = evt.target[0]
+        let isAlreadySelected = evt.target[0].selected()
+
+        console.log(targetNode,isAlreadySelected)
+
+        if(!isAlreadySelected) {
+            setTimeout(()=>{
+                this.neighborDepth = 1;
+                this.cy.scratch('selElems', this.cy.$(':selected'))
+            });
+
+            return;
+        }
+
+        console.log(this.neighborDepth)
+
 
         setTimeout(()=>{
-            var d1Col = evt.target.neighborhood().neighborhood();
+            this.neighborDepth++
+
+            var d1Col = this.cy.scratch('selElems');
+
+            console.log(d1Col.size())
+
             var d2Col= d1Col.union(d1Col.neighborhood());
             d2Col.select()
 
-            console.log('zoom', this.cy.zoom())
-            console.log('pan', this.cy.pan())
+            console.log(d2Col.size())
 
-            console.log(d2Col.boundingBox())
-            console.log(d2Col.renderedBoundingBox())
+            this.cy.scratch('selElems', d2Col)
+
+            // console.log('zoom', this.cy.zoom())
+            // console.log('pan', this.cy.pan())
+
+            // console.log(d2Col.boundingBox())
+            // console.log(d2Col.renderedBoundingBox())
 
             this.cy.animation({
                 fit: {
@@ -439,15 +486,7 @@ class AgensGraphWidget extends EventSource{
             // this.cy.fit(d2Col, 100)
         },0)
 
-        // var rslt = this.cy.elements().bfs({
-        //     root:       evt.target,
-        //     directed:   false,
-        //     visit:      (v,e,u,i,d)=> d < 2
-        // })
 
-        // console.log( rslt )
-
-        // setTimeout(()=>{rslt.found.select()},0)
 
     }
 
