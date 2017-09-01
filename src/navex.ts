@@ -8,10 +8,6 @@ import * as _ from "lodash"
 type ListenerFn = (...args: Array<any>) => void;
 let scaleLinear = d3['scaleLinear']
 
-const NODE_SIZE = 30;
-const EDGE_SIZE = 10;
-
-
 class EventSource {
     ee: EventEmitter;
 
@@ -35,6 +31,7 @@ class AgensGraphWidget extends EventSource{
     cy: any;
     layout: any;
     nodeColorScale: any;
+    nodeSizeScale: any;
     nstyle: any;
     estyle: any;
     nodeSelectType: string;
@@ -49,6 +46,7 @@ class AgensGraphWidget extends EventSource{
         this.grpIdx = 0;
 
         this.nodeColorScale = scaleLinear().domain([0,1]).range(['yellow','red']);
+        this.nodeSizeScale = scaleLinear().domain([0,20]).range([30,150]);
 
         if(typeof domId == 'string') {
             this.domEl = document.getElementById(domId);
@@ -238,7 +236,7 @@ class AgensGraphWidget extends EventSource{
             }else {
                 this.cy.add({
                     group: "edges",
-                    data: {target: grpNode.id() , source: ed.target().id()}
+                    data: {target: grpNode.id() , source: ed.source().id()}
                 })
             }
         });
@@ -263,7 +261,12 @@ class AgensGraphWidget extends EventSource{
 
     _findCuttingEdge(eles) {
         var nb = eles.neighborhood();
-        return nb.difference(eles).filter('edge')
+
+        console.log("xxx", eles.size(), nb.size())
+
+        var outerEdges = nb.difference(eles).filter('edge');
+        console.log('outerEdges', outerEdges)
+        return outerEdges
     }
 
     ungroupSelectedNode() {
@@ -355,11 +358,11 @@ class AgensGraphWidget extends EventSource{
 
     degreeSize() {
         this.nstyle.width = (ele)=>{
-            return ele.degree(true)*5 + 5;
+            return this.nodeSizeScale(ele.degree(true));
         };
 
         this.nstyle.height = (ele)=>{
-            return ele.degree(true)*5 + 5;
+            return this.nodeSizeScale(ele.degree(true));
         };
 
 

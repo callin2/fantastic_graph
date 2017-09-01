@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/navex.ts" line="438" />
+    <bookmark url="file://$PROJECT_DIR$/src/navex.ts" line="441" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DemoApp.ts" afterPath="$PROJECT_DIR$/src/DemoApp.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navex.ts" afterPath="$PROJECT_DIR$/src/navex.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widget.html" afterPath="$PROJECT_DIR$/widget.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,11 +50,11 @@
           <file leaf-file-name="navex.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/navex.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="470" column="0" lean-forward="true" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+                <state relative-caret-position="249">
+                  <caret line="233" column="22" lean-forward="false" selection-start-line="233" selection-start-column="22" selection-end-line="233" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
-                    <marker date="1504256258307" expanded="true" signature="7692:7865" ph="..." />
+                    <marker date="1504257439368" expanded="true" signature="7881:8054" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -94,12 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>-</find>
-      <find>mouseover</find>
-      <find>stylesheet</find>
-      <find>Stylesheet</find>
-      <find>CoreStyle</find>
-      <find>Cy.Static</find>
       <find>cytoscape</find>
       <find>circle</find>
       <find>arrow</find>
@@ -124,6 +115,12 @@
       <find>zoom</find>
       <find>click</find>
       <find>nodeClickHandler</find>
+      <find>.range</find>
+      <find>NODE_SIZE</find>
+      <find>scale</find>
+      <find>*5</find>
+      <find>group</find>
+      <find>_findCuttingEdge</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -311,7 +308,7 @@
       <workItem from="1504138475231" duration="4848000" />
       <workItem from="1504145825705" duration="16619000" />
       <workItem from="1504226913151" duration="4367000" />
-      <workItem from="1504231861602" duration="9121000" />
+      <workItem from="1504231861602" duration="11322000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -390,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504169946681</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="mutilple click select graph">
+      <created>1504256276586</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1504256276586</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115486000" />
+    <option name="totallyTimeSpent" value="117687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,7 +506,8 @@
     <MESSAGE value="degree slider" />
     <MESSAGE value="2depth neighbor select&#10;fit animation" />
     <MESSAGE value="group / ungroup" />
-    <option name="LAST_COMMIT_MESSAGE" value="group / ungroup" />
+    <MESSAGE value="mutilple click select graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="mutilple click select graph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -832,11 +837,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/navex.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="470" column="0" lean-forward="true" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+        <state relative-caret-position="249">
+          <caret line="233" column="22" lean-forward="false" selection-start-line="233" selection-start-column="22" selection-end-line="233" selection-end-column="22" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <marker date="1504256258307" expanded="true" signature="7692:7865" ph="..." />
+            <marker date="1504257439368" expanded="true" signature="7881:8054" ph="..." />
           </folding>
         </state>
       </provider>
