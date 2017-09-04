@@ -55,6 +55,8 @@
     <button @click="groupNode" class="fa fa-object-group"></button>
     <button @click="ungroupNode" class="fa fa-object-ungroup"></button>
 
+    <input type="checkbox" name="semanticzoom" @change="toggleSemanticZoom">semantic zoom
+
     <label>data
         <select @change="handleFileChange">
             <option value="">--------</option>
@@ -76,6 +78,8 @@
             <option value="concentric">concentric</option>
             <option value="breadthfirst">breadthfirst</option>
             <option value="cose">cose</option>
+            <option value="euler">euler</option>
+            <option value="cola">cola</option>
         </select>
     </label>
 

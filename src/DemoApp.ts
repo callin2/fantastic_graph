@@ -60,6 +60,10 @@ class DemoApp extends Application {
         this.gw.setNodeDegreeMin(evt.target['value'])
     }
 
+    toggleSemanticZoom(evt): void {
+        this.gw.toggleSemanticZoom()
+    }
+
 
 }
 

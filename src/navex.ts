@@ -1,4 +1,6 @@
 import * as cytoscape from "cytoscape"
+import * as euler_reg from 'cytoscape-euler'
+import * as cycola from 'cytoscape-cola'
 import {EventEmitter} from "eventemitter3"
 import * as gexf  from "gexf"
 import * as d3 from "d3"
@@ -37,6 +39,7 @@ class AgensGraphWidget extends EventSource{
     nodeSelectType: string;
     grpIdx: number;
     neighborDepth: number;
+    isSemanticZoom: boolean;
 
     constructor(domId:string | any) {
         super();
@@ -45,7 +48,7 @@ class AgensGraphWidget extends EventSource{
         this.estyle = {};
         this.grpIdx = 0;
 
-        this.nodeColorScale = scaleLinear().domain([0,1]).range(['yellow','red']);
+        this.nodeColorScale = scaleLinear().domain([0,1.2]).range(['yellow','red']);
         this.nodeSizeScale = scaleLinear().domain([0,20]).range([30,150]);
 
         if(typeof domId == 'string') {
@@ -54,8 +57,17 @@ class AgensGraphWidget extends EventSource{
             this.domEl = domId;
         }
 
+        // cytoscape.use(euler);
+        console.log(cycola)
+        euler_reg(cytoscape);
+        cycola(cytoscape);
+
         this.cy = cytoscape({
             container: this.domEl,
+            // layout: {
+            //     name: 'euler',
+            //     randomize: true
+            // },
             style: [
                 {
                     selector : 'edge',
@@ -91,7 +103,9 @@ class AgensGraphWidget extends EventSource{
         this.cy.boxSelectionEnabled(true)
 
         // node edge size 고장
-        this.cy.on('zoom_x',()=>{
+        this.cy.on('zoom',()=>{
+
+            if(!this.isSemanticZoom) return;
 
             var zoom = this.cy.zoom();
             var nodeSize = 40 / zoom
@@ -127,6 +141,10 @@ class AgensGraphWidget extends EventSource{
         this.nodeColorScale = scaleLinear().domain([0,1]).range([fromColor,toColor]);
     }
 
+    toggleSemanticZoom() {
+        this.isSemanticZoom = !this.isSemanticZoom;
+    }
+
     loadGexf(fileUrl: string) {
         this.clear();
 
@@ -152,7 +170,7 @@ class AgensGraphWidget extends EventSource{
                 })
             });
         }).then(()=>{
-            this.setLayout('cose')
+            // this.setLayout('cose')
             // this.layout = this.cy.layout({name: 'cose'});
             // this.layout.run()
         });
@@ -189,8 +207,20 @@ class AgensGraphWidget extends EventSource{
             });
 
             this.layout.run()
+        }if(layoutName == 'cola'){
+            this.layout = this.cy.layout({
+                name: layoutName,
+                randomize: true,
+                refresh: 5,
+                // infinite: true,
+
+            })
+            this.layout.run()
+
         }else{
-            this.layout = this.cy.layout({name: layoutName})
+
+
+            this.layout = this.cy.layout({name: layoutName, randomize: true})
             this.layout.run()
         }
     }
