@@ -17,7 +17,7 @@ class DemoApp extends Application {
     }
 
     handleFileChange(evt): void {
-        var url = <HTMLInputElement>document.querySelector("select[name='datafile'] option:checked")
+        var url = <HTMLInputElement>evt.target.querySelector("option:checked")
         this.gw.loadGexf(url.value)
     }
 
@@ -64,6 +64,9 @@ class DemoApp extends Application {
         this.gw.toggleSemanticZoom()
     }
 
+    clacBc(): void {
+        this.gw.clacBc()
+    }
 
 }
 

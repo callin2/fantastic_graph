@@ -56,10 +56,21 @@
     <button @click="ungroupNode" class="fa fa-object-ungroup"></button>
 
     <input type="checkbox" name="semanticzoom" @change="toggleSemanticZoom">semantic zoom
+    <label>collection
+        <button @click="calcBc"> betweennessCentrality </button>
+        <button @click="calcBfs"> breadthFirstSearch </button>
+        <button @click="calcDfs"> depthFirstSearch </button>
+        <button @click="dijkstra"> dijkstra </button>
+        <button @click="aStar"> aStar </button>
+        <button @click="bellmanFord"> bellmanFord </button>
+        <button @click="kruskal"> kruskal </button>
+        <button @click="kargerStein"> kargerStein </button>
+        <button @click="pageRank"> pageRank </button>
+        <button @click="kargerStein"> kargerStein </button>
+    </label>
 
     <label>data
         <select @change="handleFileChange">
-            <option value="">--------</option>
             <option value="/data/dh11.gexf">dh11.gexf</option>
             <option value="/data/photoviz dynamic.gexf">photoviz dynamic.gexf</option>
             <option value="/data/diseasome.gexf">diseasome.gexf</option>
@@ -69,7 +80,6 @@
 
     <label>layout
         <select @change="handleLayoutChange">
-            <option value="">--------</option>
             <option value="null">null</option>
             <option value="random">random</option>
             <option value="preset">preset</option>

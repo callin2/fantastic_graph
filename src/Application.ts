@@ -19,7 +19,17 @@ class Application    {
 
             if(matchRslt == null) continue;
             let handlerName = elem.getAttribute(matchRslt[0])
-            elem.addEventListener(matchRslt[1],(evt)=> this[handlerName](evt) )
+
+            elem.addEventListener(matchRslt[1],(evt)=> {
+                if( typeof this[handlerName] != 'function') {
+                    console.error('event handler "'+handlerName+'() not found!' )
+                    return;
+                }
+
+                this[handlerName](evt)
+
+            })
+
         }
 
         // bind child Elemeent

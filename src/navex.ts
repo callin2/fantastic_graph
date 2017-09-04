@@ -403,7 +403,10 @@ class AgensGraphWidget extends EventSource{
             .selector('node')
             .style(this.nstyle)
             .update();
+    }
 
+    clacBc() {
+        this.cy.$(':selected')
     }
 
     centralitySize() {
