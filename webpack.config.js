@@ -15,7 +15,8 @@ module.exports = {
         publicPath: "/dist/"
     },
 
-    // devtool: 'source-map',
+    devtool: 'source-map',
+    // devtool: 'cheap-module-source-map',
     // devtool: 'inline-source-map',
     devtool: 'eval',
     resolve: {
@@ -30,7 +31,11 @@ module.exports = {
             },
             {
                 test: /\.ts$/,
-                loader: 'ts-loader',
+                // loader: 'ts-loader',
+                loader: 'awesome-typescript-loader',
+                options: {
+                    configFileName: 'tsconfig.json'
+                },
                 exclude: /node_modules/,
                 // options: {
                 //     transpileOnly: true

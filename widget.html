@@ -22,7 +22,7 @@
             position: fixed;
             top: 10px;
             left:10px;
-            right: 10px;
+            right: 310px;
             /*height: 30px;*/
             border: solid #2f3139 thin;
             background-color: #2f3139;
@@ -36,19 +36,19 @@
             height: 100%;
         }
 
-        label {
-            margin-left: 15px;
-            font-weight: bold;
-            color: orange;
-        }
+        /*label {*/
+            /*margin-left: 15px;*/
+            /*font-weight: bold;*/
+            /*color: orange;*/
+        /*}*/
     </style>
     <link rel="stylesheet" href="ext/font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <script src="//cdn.jsdelivr.net/quicksettings/latest/quicksettings.min.js"></script>
 </head>
 <body id="app">
-<div class="toolbar">
+<div class="toolbar" style="display:none" >
 
-    <button @click="fit" class="fa fa-arrows-alt"></button>
+    <!--<button @click="fit" class="fa fa-arrows-alt"></button>-->
     <button @click="zoomin"  class="fa fa-plus-square-o"></button>
     <button @click="zoomout" class="fa fa-minus-square-o"></button>
 
@@ -69,14 +69,16 @@
         <button @click="kargerStein"> kargerStein </button>
     </label>
 
-    <label>data
-        <select @change="handleFileChange">
-            <option value="/data/dh11.gexf">dh11.gexf</option>
-            <option value="/data/photoviz dynamic.gexf">photoviz dynamic.gexf</option>
-            <option value="/data/diseasome.gexf">diseasome.gexf</option>
-            <option value="/data/EuroSiSPays.gexf">EuroSiSPays.gexf</option>
-        </select>
-    </label>
+    <!--<label>data-->
+        <!--<select @change="handleFileChange">-->
+            <!--<option value="/data/dh11.gexf">dh11.gexf</option>-->
+            <!--<option value="/data/photoviz dynamic.gexf">photoviz dynamic.gexf</option>-->
+            <!--<option value="/data/diseasome.gexf">diseasome.gexf</option>-->
+            <!--<option value="/data/EuroSiSPays.gexf">EuroSiSPays.gexf</option>-->
+            <!--<option value="/data/data.json">data.json</option>-->
+            <!--<option value="/data/gal.json">gal.json</option>-->
+        <!--</select>-->
+    <!--</label>-->
 
     <label>layout
         <select @change="handleLayoutChange">

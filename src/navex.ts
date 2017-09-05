@@ -7,6 +7,7 @@ import * as d3 from "d3"
 import * as fa from "fontawesome"
 import * as _ from "lodash"
 
+
 type ListenerFn = (...args: Array<any>) => void;
 let scaleLinear = d3['scaleLinear']
 
@@ -26,6 +27,11 @@ class EventSource {
     off(event: string, fn?: ListenerFn) {
         this.ee.off(event, fn)
     }
+
+    fire(event: string, ...args: Array<any>): boolean {
+        return this.ee.emit(event, ...args)
+    }
+
 }
 
 class AgensGraphWidget extends EventSource{
@@ -48,7 +54,7 @@ class AgensGraphWidget extends EventSource{
         this.estyle = {};
         this.grpIdx = 0;
 
-        this.nodeColorScale = scaleLinear().domain([0,1.2]).range(['yellow','red']);
+        this.nodeColorScale = scaleLinear().domain([0,1.2]).range(['yellow', 'red']);
         this.nodeSizeScale = scaleLinear().domain([0,20]).range([30,150]);
 
         if(typeof domId == 'string') {
@@ -75,14 +81,14 @@ class AgensGraphWidget extends EventSource{
                         width:3,
                         'target-arrow-shape':"triangle",
                         'target-arrow-color':"red",
-                        'curve-style' : 'segments',
+                        // 'curve-style' : 'segments',
                         'line-style' : 'solid',
                     }
                 },{
                     selector: 'node',
                     style: {
                         "text-valign": 'center',
-                        label: fa['youtube'],
+                        // label: fa['youtube'],
                         "font-family": "FontAwesome"
                     }
                 },{
@@ -145,6 +151,23 @@ class AgensGraphWidget extends EventSource{
         this.isSemanticZoom = !this.isSemanticZoom;
     }
 
+    loadJson(fileUrl: string) {
+        this.clear();
+
+        fetch(fileUrl).then((res)=>{
+            return res.text()
+        })
+        .then((text)=> {
+            console.log(text)
+            return JSON.parse(text);
+        })
+        .then((json: any)=>{
+            console.log(json)
+            this.cy.add(json)
+            this.cy.fit(50)
+        })
+    }
+
     loadGexf(fileUrl: string) {
         this.clear();
 
@@ -182,7 +205,9 @@ class AgensGraphWidget extends EventSource{
     }
 
     setLayout(layoutName: string) {
-        console.log('layoutName', layoutName)
+        console.log("node count", this.cy.$('node').size())
+        console.log("edge count", this.cy.$('edge').size())
+        console.time(layoutName)
         if(this.layout) {
             this.layout.stop()
         }
@@ -218,11 +243,11 @@ class AgensGraphWidget extends EventSource{
             this.layout.run()
 
         }else{
-
-
-            this.layout = this.cy.layout({name: layoutName, randomize: true})
+            this.layout = this.cy.layout({name: layoutName, randomize: true, animate: true})
             this.layout.run()
         }
+
+        console.timeEnd(layoutName)
     }
 
     setColorType(colorType: string) {
@@ -483,13 +508,13 @@ class AgensGraphWidget extends EventSource{
             setTimeout(()=>{
                 this.neighborDepth = 1;
                 this.cy.scratch('selElems', this.cy.$(':selected'))
+                    this.fire('nodeSelected', evt.target[0])
             });
 
             return;
         }
 
         console.log(this.neighborDepth)
-
 
         setTimeout(()=>{
             this.neighborDepth++
@@ -505,12 +530,6 @@ class AgensGraphWidget extends EventSource{
 
             this.cy.scratch('selElems', d2Col)
 
-            // console.log('zoom', this.cy.zoom())
-            // console.log('pan', this.cy.pan())
-
-            // console.log(d2Col.boundingBox())
-            // console.log(d2Col.renderedBoundingBox())
-
             this.cy.animation({
                 fit: {
                     eles: d2Col,
@@ -518,8 +537,6 @@ class AgensGraphWidget extends EventSource{
                 },
                 duration: 500
             }).play()
-
-            // this.cy.fit(d2Col, 100)
         },0)
 
 
