@@ -123,7 +123,7 @@ class DemoApp extends Application {
         this.sizeSettings = QuickSettings.create(630, 0, "Size").hide();
 
         this.settings.addDropDown("Data File", [
-            "dh11.gexf", "photoviz dynamic.gexf",
+            "dh11.gexf", "photoviz dynamic.gexf","github.gexf", "ccnr-universe-fa2-ncolorModularity-nsizeBeteewnessCentrality.gexf",
             "diseasome.gexf","diseasome_10000.gexf","EuroSiSPays.gexf",
             "data.json", "gal.json"
         ], (file) => {
@@ -135,7 +135,7 @@ class DemoApp extends Application {
         });
 
         this.settings.addDropDown("Layout", [
-            "random", "preset",
+            "random", "preset","concentric",
             "grid","circle",
             "cose", "euler",
             "cola"
@@ -155,9 +155,9 @@ class DemoApp extends Application {
             val ? this.sizeSettings.show() : this.sizeSettings.hide()
         });
 
-        // settings.addButton("Fit",()=>{
-        //     this.fit(null)
-        // });
+        this.settings.addButton("Fit",()=>{
+            this.fit(null)
+        });
 
         //========================
         this.colorSettings.addColor("from", "#ffff00", (fromColor)=>{

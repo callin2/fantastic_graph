@@ -4,7 +4,9 @@ var webpack = require('webpack');
 module.exports = {
     entry: {
         // main :'./src/main.ts',
-        DemoApp:'./src/DemoApp.ts'
+        DemoApp:'./src/DemoApp.ts',
+        FitZoom:'./src/demo/FitZoom.ts',
+        NodeSelect:'./src/demo/NodeSelect.ts'
     },
     output: {
         filename: "[name].js",

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <script src="/ext/ogma.min.js"></script>
+    <style>
+        #graph-container { top: 0; bottom: 0; left: 0; right: 0; position: absolute; margin: 0; overflow: hidden; }
+        .info {
+            position: absolute;
+            color: #fff;
+            background: #141229;
+            font-size: 12px;
+            font-family: monospace;
+            padding: 5px;
+        }
+        .info.n { top: 0; left: 0; }
+        .info.e { top: 20px; left: 0; }
+    </style>
+</head>
+<body>
+<div id="graph-container"></div>
+<div id="n" class="info n">loading a large graph, it can take a few seconds...</div>
+<div id="e" class="info e"></div>
+
+<script>
+    'use strict';
+
+    var ogma = new Ogma({
+        container: 'graph-container',
+        settings: {
+            texts: {
+                fontFamily: 'Roboto',
+                nodeFontSize: 12
+            },
+            hover: {
+                nodeTextBackgroundColor: 'white'
+            },
+            render: {
+                // webGLAntiAliasing: 'none' // 'super-sampling' (default), 'native', 'none'
+            },
+            drag: {
+                manual: false // disable node dragging
+            },
+            captor: {
+                // disable the detection of edges and texts, making them impossible to hover or select.
+                edges: false,
+                nodeTexts: false,
+                edgeTexts: false
+            },
+            shapes: {
+                edgeThreshold: 1,
+                nodeInnerStrokeThreshold: 5
+            }
+        }
+    });
+
+    ogma.imports.from('gexf', '/data/github.gexf', function() {
+        console.log('import done');
+        document.getElementById('n').textContent = 'nodes: ' + ogma.graph.nodes.length;
+        document.getElementById('e').textContent = 'edges: ' + ogma.graph.edges.length;
+
+        setTimeout(()=>{
+            console.time('concentric')
+            ogma.layouts.start('concentric', {
+                centralNode:'Bigcheese',
+                allowOverlap: false,
+            },{ onEnd:()=>{console.timeEnd('concentric')} });
+        },3000)
+
+
+    });
+
+    function reloadFonts() {
+        console.log('reloading');
+        ogma.render.reloadFonts();
+    }
+
+    if (document.fonts) {
+        var fontsReady = document.fonts.ready;
+        if (typeof(fontsReady) == "function") {
+            fontsReady = document.fonts.ready();
+        }
+        fontsReady.then(reloadFonts);
+    }
+    else {
+        setTimeout(reloadFonts, 2000);
+    }
+
+    // TODO: highlight neighbors or selected node
+
+</script>
+</body>
+</html>

@@ -47,7 +47,7 @@ class AgensGraphWidget extends EventSource{
     neighborDepth: number;
     isSemanticZoom: boolean;
 
-    constructor(domId:string | any) {
+    constructor(domId:string | any, option?: any) {
         super();
 
         this.nstyle = {};
@@ -63,17 +63,13 @@ class AgensGraphWidget extends EventSource{
             this.domEl = domId;
         }
 
-        // cytoscape.use(euler);
-        console.log(cycola)
+        // register extensions !!
         euler_reg(cytoscape);
         cycola(cytoscape);
 
-        this.cy = cytoscape({
+        var _option = _.defaults({
             container: this.domEl,
-            // layout: {
-            //     name: 'euler',
-            //     randomize: true
-            // },
+            textureOnViewport: true,
             style: [
                 {
                     selector : 'edge',
@@ -99,8 +95,9 @@ class AgensGraphWidget extends EventSource{
                     }
                 }
             ]
-        });
+        },option)
 
+        this.cy = cytoscape(_option);
         this.cy.on('click','node', (evt)=>{
             this.nodeClickHandler(evt)
         });
@@ -114,13 +111,14 @@ class AgensGraphWidget extends EventSource{
             if(!this.isSemanticZoom) return;
 
             var zoom = this.cy.zoom();
-            var nodeSize = 40 / zoom
+            var nodeSize = 20 / zoom
 
-            if(nodeSize > 100) {
-                nodeSize = 100
-            }else if(nodeSize < 20) {
-                nodeSize = 20
-            }
+            // if(nodeSize > 100) {
+            //     nodeSize = 100
+            // }else if(nodeSize < 20) {
+            //     nodeSize = 20
+            // }
+
             var edgeSize = 3 / zoom
 
             this.cy.batch(()=>{
@@ -154,7 +152,7 @@ class AgensGraphWidget extends EventSource{
     loadJson(fileUrl: string) {
         this.clear();
 
-        fetch(fileUrl).then((res)=>{
+        return fetch(fileUrl).then((res)=>{
             return res.text()
         })
         .then((text)=> {
@@ -171,7 +169,7 @@ class AgensGraphWidget extends EventSource{
     loadGexf(fileUrl: string) {
         this.clear();
 
-        fetch(fileUrl).then((res)=>{
+        return fetch(fileUrl).then((res)=>{
             return res.text()
         })
         .then((text)=>gexf.parse(text))
