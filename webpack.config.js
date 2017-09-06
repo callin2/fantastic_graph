@@ -7,6 +7,7 @@ module.exports = {
         DemoApp:'./src/DemoApp.ts',
         Filter:'./src/demo/Filter.ts',
         Styling:'./src/demo/Styling.ts',
+        Layout:'./src/demo/Layout.ts',
         FitZoom:'./src/demo/FitZoom.ts',
         NodeSelect:'./src/demo/NodeSelect.ts'
     },

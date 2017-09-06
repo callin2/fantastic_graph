@@ -211,7 +211,7 @@ class AgensGraphWidget extends EventSource{
         this.cy.remove('node')
     }
 
-    setLayout(layoutName: string) {
+    setLayout(layoutName: string, option?: any) {
         console.log("node count", this.cy.$('node').size())
         console.log("edge count", this.cy.$('edge').size())
         console.time(layoutName)
@@ -239,7 +239,52 @@ class AgensGraphWidget extends EventSource{
             });
 
             this.layout.run()
-        }if(layoutName == 'cola'){
+        }else if(layoutName == 'custom') {
+            // console.log('layoutName', layoutName)
+
+            var xColName =option.x ? option.x : 'AverageShortestPathLength'
+            var yColName =option.y ? option.y : 'Radiality'
+
+
+            var xmm = this.cy.nodes().reduce((memo, ele)=>{
+                var v = ele.data(xColName)
+                // console.log('--------------', v)
+                memo.min = Math.min(memo.min, v)
+                memo.max = Math.max(memo.max, v)
+                return memo;
+            },{min:Infinity, max:-Infinity})
+
+            var ymm = this.cy.nodes().reduce((memo, ele)=>{
+                var v = ele.data(yColName)
+                // console.log('--------------', v)
+                memo.min = Math.min(memo.min, v)
+                memo.max = Math.max(memo.max, v)
+                return memo;
+            },{min:Infinity, max:-Infinity})
+
+
+
+
+
+            var xScale = scaleLinear().domain([xmm.min,xmm.max]).range([0,1000])
+            var yScale = scaleLinear().domain([ymm.min,ymm.max]).range([-1000,0])
+
+            this.layout = this.cy.layout({
+                name: 'preset',
+                fit: false,
+                positions: (node)=>{
+                    // console.log(node.data())
+                    // return node.data().viz.position
+                    return {
+                        x: xScale(node.data(xColName)),
+                        y: yScale(node.data(yColName))
+                    };
+                },
+                animate: true
+            });
+
+            this.layout.run()
+        }else if(layoutName == 'cola'){
             this.layout = this.cy.layout({
                 name: layoutName,
                 randomize: true,

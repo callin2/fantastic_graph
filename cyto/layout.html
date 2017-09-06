@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <style>
+        html,body {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+
+        #graph {
+            height:100%
+        }
+    </style>
+
+    <!--<base href="https://callin2.github.io/fantastic_graph/">-->
+    <base href="http://localhost:8080/">
+
+    <script src="dist/Layout.js"></script>
+
+    <title>Layout</title>
+
 </head>
 <body>
-
+<button @click="coseLayout">cose</button>
+<button @click="colaLayout">cola</button>
+<button @click="eulerLayout">euler</button>
+<button @click="customLayout">custom</button>
+<label for="x">X <select name="" id="x" @change="xAxisChange">
+    <option value="AverageShortestPathLength">AverageShortestPathLength</option>
+    <option value="Radiality">Radiality</option>
+    <option value="gal80Rexp">gal80Rexp</option>
+    <option value="gal1RGsig">gal1RGsig</option>
+    <option value="Eccentricity">Eccentricity</option>
+    <option value="gal4RGsig">gal4RGsig</option>
+    <option value="gal80Rsig">gal80Rsig</option>
+    <option value="ClosenessCentrality">ClosenessCentrality</option>
+    <option value="BetweennessCentrality">BetweennessCentrality</option>
+</select></label>
+<label for="y">Y <select name="" id="y" @change="yAxisChange">
+    <option value="Radiality">Radiality</option>
+    <option value="gal80Rexp">gal80Rexp</option>
+    <option value="gal1RGsig">gal1RGsig</option>
+    <option value="Eccentricity">Eccentricity</option>
+    <option value="gal4RGsig">gal4RGsig</option>
+    <option value="gal80Rsig">gal80Rsig</option>
+    <option value="ClosenessCentrality">ClosenessCentrality</option>
+    <option value="BetweennessCentrality">BetweennessCentrality</option>
+</select></label>
+<div id="graph"></div>
 </body>
 </html>
