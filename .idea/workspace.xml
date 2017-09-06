@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/Layout.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/layout.html" afterPath="$PROJECT_DIR$/cyto/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navex.ts" afterPath="$PROJECT_DIR$/src/navex.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,8 +48,8 @@
           <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cyto/layout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="559">
-                  <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+                <state relative-caret-position="420">
+                  <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -330,9 +326,9 @@
         <option value="$PROJECT_DIR$/cyto/styling_by_prop.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/cyto/layout.html" />
         <option value="$PROJECT_DIR$/src/demo/Layout.ts" />
         <option value="$PROJECT_DIR$/src/navex.ts" />
+        <option value="$PROJECT_DIR$/cyto/layout.html" />
       </list>
     </option>
   </component>
@@ -526,7 +522,7 @@
       <workItem from="1504598171087" duration="7548000" />
       <workItem from="1504651897619" duration="1257000" />
       <workItem from="1504654097466" duration="6483000" />
-      <workItem from="1504699102295" duration="12817000" />
+      <workItem from="1504699102295" duration="12841000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -738,11 +734,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504710380184</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="layout">
+      <created>1504714567082</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1504714567082</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182760000" />
+    <option name="totallyTimeSpent" value="182784000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -847,7 +850,8 @@
     <MESSAGE value="filter" />
     <MESSAGE value="styling" />
     <MESSAGE value="Merge branch 'gh-pages' of https://github.com/callin2/fantastic_graph into gh-pages&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'gh-pages' of https://github.com/callin2/fantastic_graph into gh-pages&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,8 +1118,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cyto/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        <state relative-caret-position="420">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
