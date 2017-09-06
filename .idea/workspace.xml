@@ -4,10 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/navex.ts" line="497" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="data">
+    <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/fitzoom.html" afterPath="$PROJECT_DIR$/cyto/fitzoom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/FitZoom.ts" afterPath="$PROJECT_DIR$/src/demo/FitZoom.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/FitZoom.js" afterPath="$PROJECT_DIR$/dist/FitZoom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,21 +76,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="9" />
+                <state relative-caret-position="384">
+                  <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fitzoom.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="fitzoom.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cyto/fitzoom.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+                <state relative-caret-position="64">
+                  <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -259,9 +260,9 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/cyto/node_select.html" />
         <option value="$PROJECT_DIR$/src/demo/NodeSelect.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/demo/FitZoom.ts" />
         <option value="$PROJECT_DIR$/cyto/fitzoom.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -437,7 +438,7 @@
       <workItem from="1504570962709" duration="19972000" />
       <workItem from="1504598171087" duration="7548000" />
       <workItem from="1504651897619" duration="1257000" />
-      <workItem from="1504654097466" duration="3627000" />
+      <workItem from="1504654097466" duration="5226000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -600,11 +601,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504655934861</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="data">
+      <created>1504657849383</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1504657849383</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164266000" />
+    <option name="totallyTimeSpent" value="165865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -619,7 +627,7 @@
     <frame x="1969" y="42" width="1891" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19164883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21413276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988626" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564633" sideWeight="0.51231265" order="7" side_tool="true" content_ui="tabs" />
@@ -1027,14 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/navex.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -1059,11 +1059,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cyto/fitzoom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        <state relative-caret-position="64">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
