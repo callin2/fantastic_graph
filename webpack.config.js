@@ -9,6 +9,9 @@ module.exports = {
         Styling:'./src/demo/Styling.ts',
         Layout:'./src/demo/Layout.ts',
         FitZoom:'./src/demo/FitZoom.ts',
+        LargeData:'./src/demo/LargeData.ts',
+        PropEdit:'./src/demo/PropEdit.ts',
+        FitZoom:'./src/demo/FitZoom.ts',
         NodeSelect:'./src/demo/NodeSelect.ts'
     },
     output: {
