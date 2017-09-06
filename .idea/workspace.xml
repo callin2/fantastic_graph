@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/layout.html" afterPath="$PROJECT_DIR$/cyto/layout.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,8 +47,8 @@
           <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cyto/layout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+                <state relative-caret-position="440">
+                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -192,8 +191,8 @@
           <file leaf-file-name="navex.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/navex.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="276" column="47" lean-forward="true" selection-start-line="276" selection-start-column="47" selection-end-line="276" selection-end-column="47" />
+                <state relative-caret-position="477">
+                  <caret line="280" column="22" lean-forward="true" selection-start-line="280" selection-start-column="22" selection-end-line="280" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                     <element signature="e#3089#3752#0" expanded="false" />
@@ -522,7 +521,7 @@
       <workItem from="1504598171087" duration="7548000" />
       <workItem from="1504651897619" duration="1257000" />
       <workItem from="1504654097466" duration="6483000" />
-      <workItem from="1504699102295" duration="12841000" />
+      <workItem from="1504699102295" duration="13000000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -741,11 +740,25 @@
       <option name="project" value="LOCAL" />
       <updated>1504714567082</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="layout">
+      <created>1504714585115</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1504714585115</updated>
+    </task>
+    <task id="LOCAL-00033" summary="layout">
+      <created>1504714628117</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1504714628117</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182784000" />
+    <option name="totallyTimeSpent" value="182943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1105,22 +1118,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cyto/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/navex.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="276" column="47" lean-forward="true" selection-start-line="276" selection-start-column="47" selection-end-line="276" selection-end-column="47" />
+        <state relative-caret-position="477">
+          <caret line="280" column="22" lean-forward="true" selection-start-line="280" selection-start-column="22" selection-end-line="280" selection-end-column="22" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="e#3089#3752#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cyto/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
