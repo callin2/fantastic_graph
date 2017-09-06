@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        html,body {
+        html,body, #graph {
             margin: 0px;
             padding: 0px;
             height: 100%;
             overflow: hidden;
         }
     </style>
-    <!--<base href="https://callin2.github.io/fantastic_graph/">-->
-    <base href="http://localhost:8081/">
+    <base href="https://callin2.github.io/fantastic_graph/">
+    <!--<base href="http://localhost:8081/">-->
     <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
     <script src="dist/Filter.js"></script>
     <title>filter</title>
 </head>
 <body>
 <div class="toolbar" style="position: fixed; top: 0px; z-index: 999">
-    <button @click="fit">fit</button>
-    <button @click="toggleZoomMode">toggle zoom</button>
+    degree <input type="range" name="degree" @change="filter" min="0" max="20" step="1" value="0">
 </div>
-
+<div id="graph"></div>
 </body>
 </html>
