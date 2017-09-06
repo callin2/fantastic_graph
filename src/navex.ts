@@ -540,12 +540,12 @@ class AgensGraphWidget extends EventSource{
                 n.style('display', 'none')
                 // n.addClass("selected")
             }else {
-                n.style('display', '')
+                n.style('display', 'element')
                 // n.removeClass("selected")
             }
         })
 
-        // this.cy.fit(this.cy.$(':selected'), 50)
+        this.cy.fit(this.cy.$(':visible'), 50)
 
     }
 

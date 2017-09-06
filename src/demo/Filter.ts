@@ -42,12 +42,18 @@ class Filter extends Application {
     }
 
     fit() {
-        this.agw.cy.fit()
+        this.agw.cy.fit(this.agw.cy.$(':visible'), 50)
+        // this.agw.cy.fit()
     }
 
     filter(evt) {
         console.log(evt)
         this.agw.setNodeDegreeMin(evt.target['value'])
+        var eles = this.agw.cy.$(':visible')
+
+        console.log(eles.size())
+
+        this.agw.cy.fit(this.agw.cy.$(':visible'), 50)
     }
 }
 

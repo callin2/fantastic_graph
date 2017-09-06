@@ -11,7 +11,7 @@
         }
     </style>
     <base href="https://callin2.github.io/fantastic_graph/">
-    <!--<base href="http://localhost:8080/">-->
+    <!--<base href="http://localhost:8000/">-->
 
     <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
     <script src="dist/Filter.js"></script>
@@ -20,6 +20,10 @@
 <body>
 <div class="toolbar" style="position: fixed; top: 0px; z-index: 999">
     degree <input type="range" name="degree" @change="filter" min="0" max="20" step="1" value="0">
+
+
+    <button @click="fit">fit</button>
+
 </div>
 <div id="graph"></div>
 </body>
