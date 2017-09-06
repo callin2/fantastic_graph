@@ -2,12 +2,27 @@ const path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './src/main.ts',
+    entry: {
+        // main :'./src/main.ts',
+        DemoApp:'./src/DemoApp.ts',
+        FitZoom:'./src/demo/FitZoom.ts',
+        NodeSelect:'./src/demo/NodeSelect.ts'
+    },
     output: {
-        filename: 'main.js',
+        filename: "[name].js",
+        devtoolLineToLine: true,
+        sourceMapFilename: "[file].map",
         path: path.resolve(__dirname, 'dist'),
         pathinfo: true,  // must be removed at production
         publicPath: "/dist/"
+    },
+
+    devtool: 'source-map',
+    // devtool: 'cheap-module-source-map',
+    // devtool: 'inline-source-map',
+    devtool: 'eval',
+    resolve: {
+        extensions: [ '.webpack.js', '.web.js', '.ts', '.js']
     },
 
     module: {
@@ -15,23 +30,25 @@ module.exports = {
             {
                 test: /\.styl$/,
                 use: ['style-loader','css-loader','stylus-loader']
+            },
+            {
+                test: /\.ts$/,
+                // loader: 'ts-loader',
+                loader: 'awesome-typescript-loader',
+                options: {
+                    configFileName: 'tsconfig.json'
+                },
+                exclude: /node_modules/,
+                // options: {
+                //     transpileOnly: true
+                // }
             }
         ]
     },
 
-    // plugins: [
-    //     new webpack.LoaderOptionsPlugin({
-    //         test: /\.styl$/,
-    //         stylus: {
-    //             // You can have multiple stylus configs with other names and use them
-    //             // with `stylus-loader?config=otherConfig`.
-    //             default: {
-    //                 use: [stylus_plugin()],
-    //             },
-    //             // otherConfig: {
-    //             //     use: [other_plugin()],
-    //             // },
-    //         },
-    //     }),
-    // ]
+    node: {
+        fs: 'empty'
+    }
+
+
 };

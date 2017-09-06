@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="dist/DemoApp.js"></script>
+    <style>
+        html, body {
+            overflow: hidden;
+            margin:  0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #373941;
+        }
+
+        .toolbar:hover {
+            opacity: 1;
+        }
+
+        .toolbar {
+            position: fixed;
+            top: 10px;
+            left:10px;
+            right: 310px;
+            /*height: 30px;*/
+            border: solid #2f3139 thin;
+            background-color: #2f3139;
+            opacity: 0.3;
+            padding: 3px;
+            z-index: 999;
+        }
+
+        .graph {
+            width:  100%;
+            height: 100%;
+        }
+
+        /*label {*/
+            /*margin-left: 15px;*/
+            /*font-weight: bold;*/
+            /*color: orange;*/
+        /*}*/
+    </style>
+    <link rel="stylesheet" href="ext/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.jsdelivr.net/quicksettings/latest/quicksettings.min.js"></script>
+</head>
+<body id="app">
+<div class="toolbar" style="display:none" >
+
+    <!--<button @click="fit" class="fa fa-arrows-alt"></button>-->
+    <button @click="zoomin"  class="fa fa-plus-square-o"></button>
+    <button @click="zoomout" class="fa fa-minus-square-o"></button>
+
+    <button @click="groupNode" class="fa fa-object-group"></button>
+    <button @click="ungroupNode" class="fa fa-object-ungroup"></button>
+
+    <input type="checkbox" name="semanticzoom" @change="toggleSemanticZoom">semantic zoom
+    <label>collection
+        <button @click="calcBc"> betweennessCentrality </button>
+        <button @click="calcBfs"> breadthFirstSearch </button>
+        <button @click="calcDfs"> depthFirstSearch </button>
+        <button @click="dijkstra"> dijkstra </button>
+        <button @click="aStar"> aStar </button>
+        <button @click="bellmanFord"> bellmanFord </button>
+        <button @click="kruskal"> kruskal </button>
+        <button @click="kargerStein"> kargerStein </button>
+        <button @click="pageRank"> pageRank </button>
+        <button @click="kargerStein"> kargerStein </button>
+    </label>
+
+    <!--<label>data-->
+        <!--<select @change="handleFileChange">-->
+            <!--<option value="/data/dh11.gexf">dh11.gexf</option>-->
+            <!--<option value="/data/photoviz dynamic.gexf">photoviz dynamic.gexf</option>-->
+            <!--<option value="/data/diseasome.gexf">diseasome.gexf</option>-->
+            <!--<option value="/data/EuroSiSPays.gexf">EuroSiSPays.gexf</option>-->
+            <!--<option value="/data/data.json">data.json</option>-->
+            <!--<option value="/data/gal.json">gal.json</option>-->
+        <!--</select>-->
+    <!--</label>-->
+
+    <label>layout
+        <select @change="handleLayoutChange">
+            <option value="null">null</option>
+            <option value="random">random</option>
+            <option value="preset">preset</option>
+            <option value="grid">grid</option>
+            <option value="circle">circle</option>
+            <option value="concentric">concentric</option>
+            <option value="breadthfirst">breadthfirst</option>
+            <option value="cose">cose</option>
+            <option value="euler">euler</option>
+            <option value="cola">cola</option>
+        </select>
+    </label>
+
+    <label>color
+        <select @change="handleColoring">
+            <option value="">--------</option>
+            <option value="degree">degree</option>
+            <option value="centrality.out">centrality.out</option>
+            <option value="centrality.in">centrality.in</option>
+
+        </select>
+    </label>
+
+    <label>node size
+        <select @change="handleSize">
+            <option value="">--------</option>
+            <option value="degree">degree</option>
+            <option value="centrality">centrality</option>
+
+        </select>
+    </label>
+
+    <label>degree range
+        <input @change="degreeFilterChange" type="range" min="0" max="10" step="1" >
+    </label>
+
+
+
+    <!--<label>node select type-->
+        <!--<select name="nodeselecttype">-->
+            <!--<option value="node">node</option>-->
+            <!--<option value="with_child">with_child</option>-->
+            <!--<option value="with_neighbor">with_neighbor</option>-->
+            <!--<option value="entire_cluster">entire_cluster</option>-->
+        <!--</select>-->
+    <!--</label>-->
+
+
+</div>
+<div class="graph" data-agens></div>
+
+</body>
+</html>
