@@ -7,15 +7,21 @@
             margin: 0px;
             padding: 0px;
             height: 100%;
+            overflow: hidden;
         }
     </style>
+    <base href="https://callin2.github.io/fantastic_graph/">
+    <!--<base href="http://localhost:8081/">-->
     <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
-    <script src="../dist/FitZoom.js"></script>
+    <script src="dist/FitZoom.js"></script>
 
     <title>fit / zoom</title>
 </head>
 <body>
-<button @click="fit">fit</button>
-<button @click="toggleZoomMode">toggle zoom</button>
+<div class="toolbar" style="position: fixed; top: 0px; z-index: 999">
+    <button @click="fit">fit</button>
+    <button @click="toggleZoomMode">toggle zoom</button>
+</div>
+
 </body>
 </html>
