@@ -4,16 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/navex.ts" line="497" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="fitzoom">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/Filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/Filter.ts" />
+    <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/filter.html" afterPath="$PROJECT_DIR$/cyto/filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/fitzoom.html" afterPath="$PROJECT_DIR$/cyto/fitzoom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/node_select.html" afterPath="$PROJECT_DIR$/cyto/node_select.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/FitZoom.js" afterPath="$PROJECT_DIR$/dist/FitZoom.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/NodeSelect.js" afterPath="$PROJECT_DIR$/dist/NodeSelect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/NodeSelect.ts" afterPath="$PROJECT_DIR$/src/demo/NodeSelect.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,11 +42,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="node_select.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="node_select.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cyto/node_select.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+                <state relative-caret-position="272">
+                  <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -68,21 +62,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="NodeSelect.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="NodeSelect.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
-                  <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+                <state relative-caret-position="451">
+                  <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -105,6 +89,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="337">
                   <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="209">
+                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -168,17 +162,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FitZoom.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="FitZoom.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="25" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+                <state relative-caret-position="144">
+                  <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DemoApp.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DemoApp.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="352">
@@ -204,7 +198,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id=&quot;</find>
       <find>target=&quot;</find>
       <find>id=&quot;a_</find>
       <find>&quot;a_</find>
@@ -234,6 +227,7 @@
       <find>gal.js</find>
       <find>loadJson</find>
       <find>range</find>
+      <find>ran</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -294,7 +288,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/navex.ts" />
         <option value="$PROJECT_DIR$/src/demo/node_select.html" />
-        <option value="$PROJECT_DIR$/src/demo/NodeSelect.ts" />
         <option value="$PROJECT_DIR$/src/demo/FitZoom.ts" />
         <option value="$PROJECT_DIR$/cyto/styling_by_prop.html" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -303,6 +296,7 @@
         <option value="$PROJECT_DIR$/cyto/filter.html" />
         <option value="$PROJECT_DIR$/cyto/fitzoom.html" />
         <option value="$PROJECT_DIR$/cyto/node_select.html" />
+        <option value="$PROJECT_DIR$/src/demo/NodeSelect.ts" />
       </list>
     </option>
   </component>
@@ -680,11 +674,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504681609096</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="filter">
+      <created>1504682972178</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1504682972178</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169746000" />
+    <option name="totallyTimeSpent" value="169943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -809,7 +810,8 @@
     <MESSAGE value="demo" />
     <MESSAGE value="data" />
     <MESSAGE value="fitzoom" />
-    <option name="LAST_COMMIT_MESSAGE" value="fitzoom" />
+    <MESSAGE value="filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,22 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/widget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
@@ -1066,14 +1052,6 @@
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#select#0;n#label#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,10 +1124,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cyto/node_select.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="272">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
