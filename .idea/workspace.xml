@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cyto/large_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cyto/property.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/LargeData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/PropEdit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/LargeData.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/PropEdit.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/NodeSelect.js" afterPath="$PROJECT_DIR$/dist/NodeSelect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,11 +65,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+                <state relative-caret-position="160">
+                  <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -115,7 +107,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PropEdit.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PropEdit.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/demo/PropEdit.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="342">
@@ -165,8 +157,8 @@
           <file leaf-file-name="DemoApp.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+                <state relative-caret-position="580">
+                  <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
                   <folding>
                     <element signature="e#65#105#0" expanded="true" />
                   </folding>
@@ -344,12 +336,12 @@
         <option value="$PROJECT_DIR$/src/navex.ts" />
         <option value="$PROJECT_DIR$/cyto/layout.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/demo/LargeData.ts" />
         <option value="$PROJECT_DIR$/src/DemoApp.ts" />
         <option value="$PROJECT_DIR$/cyto/large_data.html" />
         <option value="$PROJECT_DIR$/cyto/property.html" />
         <option value="$PROJECT_DIR$/src/demo/PropEdit.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -543,7 +535,7 @@
       <workItem from="1504598171087" duration="7548000" />
       <workItem from="1504651897619" duration="1257000" />
       <workItem from="1504654097466" duration="6483000" />
-      <workItem from="1504699102295" duration="14411000" />
+      <workItem from="1504699102295" duration="14478000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -783,11 +775,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504714743536</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="layout">
+      <created>1504716157671</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1504716157671</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184354000" />
+    <option name="totallyTimeSpent" value="184421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1104,14 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/github.gexf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1135,16 +1126,6 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="e#3089#3752#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding>
-            <element signature="e#65#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1193,10 +1174,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#65#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/PropEdit.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
