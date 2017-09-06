@@ -6,6 +6,7 @@ module.exports = {
         // main :'./src/main.ts',
         DemoApp:'./src/DemoApp.ts',
         Filter:'./src/demo/Filter.ts',
+        Styling:'./src/demo/Styling.ts',
         FitZoom:'./src/demo/FitZoom.ts',
         NodeSelect:'./src/demo/NodeSelect.ts'
     },

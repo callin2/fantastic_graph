@@ -47,14 +47,20 @@ class AgensGraphWidget extends EventSource{
     neighborDepth: number;
     isSemanticZoom: boolean;
 
+    nodeFromColor: string;
+    nodeToColor: string;
+
     constructor(domId:string | any, option?: any) {
         super();
+
+        this.nodeFromColor = '#ffffff';
+        this.nodeToColor = '#0000ff';
 
         this.nstyle = {};
         this.estyle = {};
         this.grpIdx = 0;
 
-        this.nodeColorScale = scaleLinear().domain([0,1.2]).range(['yellow', 'red']);
+        this.nodeColorScale = scaleLinear().domain([0,1.2]).range([this.nodeFromColor, this.nodeToColor]);
         this.nodeSizeScale = scaleLinear().domain([0,20]).range([30,150]);
 
         if(typeof domId == 'string') {
@@ -142,8 +148,11 @@ class AgensGraphWidget extends EventSource{
     }
 
     setColorScale(fromColor, toColor) {
+        this.nodeFromColor = fromColor;
+        this.nodeToColor = toColor;
         this.nodeColorScale = scaleLinear().domain([0,1]).range([fromColor,toColor]);
     }
+
 
     toggleSemanticZoom() {
         this.isSemanticZoom = !this.isSemanticZoom;
@@ -541,6 +550,13 @@ class AgensGraphWidget extends EventSource{
 
     }
 
+    setNodeToColor(color: any) {
+        this.setColorScale(this.nodeFromColor, color)
+    }
+
+    setNodeFromColor(color: any) {
+        this.setColorScale(color, this.nodeToColor)
+    }
 }
 
 export { AgensGraphWidget }
