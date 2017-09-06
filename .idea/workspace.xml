@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/navex.ts" line="497" />
+    <bookmark url="file://$PROJECT_DIR$/src/navex.ts" line="506" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cyto/filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cyto/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cyto/styling_by_prop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/github.gexf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/Filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/FitZoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/NodeSelect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/Filter.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/Styling.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ogma_example/concentric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ogma_example/github_performance.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/fitzoom.html" afterPath="$PROJECT_DIR$/cyto/fitzoom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cyto/node_select.html" afterPath="$PROJECT_DIR$/cyto/node_select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/FitZoom.ts" afterPath="$PROJECT_DIR$/src/demo/FitZoom.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/NodeSelect.ts" afterPath="$PROJECT_DIR$/src/demo/NodeSelect.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navex.ts" afterPath="$PROJECT_DIR$/src/navex.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,59 +39,34 @@
     <favorites_list name="proto-01" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
+    <splitter split-orientation="vertical" split-proportion="0.46215674">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DemoApp.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#65#105#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="concentric.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ogma_example/concentric.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="github_performance.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ogma_example/github_performance.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1460">
-                  <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="navex.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/navex.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1580">
-                  <caret line="79" column="54" lean-forward="false" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                    <element signature="e#2936#3599#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="node_select.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cyto/node_select.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="14" />
+                <state relative-caret-position="160">
+                  <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Styling.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/demo/Styling.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="312">
+                  <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cyto/layout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -83,18 +75,40 @@
           <file leaf-file-name="NodeSelect.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+                <state relative-caret-position="297">
+                  <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="filter.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cyto/filter.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Filter.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/demo/Filter.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="417">
+                  <caret line="44" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="660">
-                  <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+                <state relative-caret-position="100">
+                  <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -103,9 +117,11 @@
           <file leaf-file-name="fitzoom.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cyto/fitzoom.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="18" column="52" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="52" />
-                  <folding />
+                <state relative-caret-position="260">
+                  <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -122,13 +138,83 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="NodeSelect.ts" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="widget.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/widget.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+                <state relative-caret-position="100">
+                  <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#select#0;n#label#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webpack.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FitZoom.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-9">
+                  <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DemoApp.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="460">
+                  <caret line="164" column="10" lean-forward="true" selection-start-line="162" selection-start-column="8" selection-end-line="164" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#65#105#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="styling_by_prop.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cyto/styling_by_prop.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="580">
+                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gal.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/gal.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="320">
+                  <caret line="17281" column="24" lean-forward="false" selection-start-line="17281" selection-start-column="9" selection-end-line="17281" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="navex.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/navex.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="271">
+                  <caret line="411" column="19" lean-forward="false" selection-start-line="411" selection-start-column="13" selection-end-line="411" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                    <element signature="e#3089#3752#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -146,20 +232,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>removeControl</find>
-      <find>addDropDown</find>
-      <find>yellow</find>
-      <find>id=&quot;</find>
-      <find>target=&quot;</find>
-      <find>id=&quot;a_</find>
-      <find>&quot;a_</find>
-      <find>&quot;b_</find>
-      <find>&quot;c_</find>
-      <find>&quot;d_</find>
-      <find>&quot;e_</find>
-      <find>&quot;f_</find>
-      <find>b_</find>
-      <find>id=&quot;c_</find>
       <find>id=&quot;b_</find>
       <find>id=&quot;d_</find>
       <find>id=&quot;e_</find>
@@ -176,6 +248,20 @@
       <find>style</find>
       <find>group</find>
       <find>green</find>
+      <find>gal.js</find>
+      <find>loadJson</find>
+      <find>range</find>
+      <find>ran</find>
+      <find>degreeColor</find>
+      <find>width</find>
+      <find>weight</find>
+      <find>8483C3</find>
+      <find>QuickSettings</find>
+      <find>nodeFromColor</find>
+      <find>nodeColorScale</find>
+      <find>background</find>
+      <find>scaleLinear</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -233,15 +319,20 @@
         <option value="$PROJECT_DIR$/src/ogma_example/concentric.html" />
         <option value="$PROJECT_DIR$/ogma_example/github_performance.html" />
         <option value="$PROJECT_DIR$/src/DemoApp.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/navex.ts" />
-        <option value="$PROJECT_DIR$/cyto/fitzoom.html" />
-        <option value="$PROJECT_DIR$/src/demo/FitZoom.ts" />
         <option value="$PROJECT_DIR$/src/demo/node_select.html" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/demo/FitZoom.ts" />
+        <option value="$PROJECT_DIR$/src/demo/Filter.ts" />
+        <option value="$PROJECT_DIR$/cyto/filter.html" />
+        <option value="$PROJECT_DIR$/cyto/fitzoom.html" />
         <option value="$PROJECT_DIR$/cyto/node_select.html" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/demo/NodeSelect.ts" />
+        <option value="$PROJECT_DIR$/cyto/layout.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/cyto/styling_by_prop.html" />
+        <option value="$PROJECT_DIR$/src/navex.ts" />
+        <option value="$PROJECT_DIR$/src/demo/Styling.ts" />
       </list>
     </option>
   </component>
@@ -290,6 +381,38 @@
               <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
               <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
+              <item name="cyto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -304,7 +427,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="scra&#9;ACTION&#9;NewScratchBuffer&#10;scratch&#9;ACTION&#9;NewScratchBuffer&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
+    <property name="SearchEverywhereHistoryKey" value="plugin&#9;ACTION&#9;WelcomeScreen.Plugins&#10;scra&#9;ACTION&#9;NewScratchBuffer&#10;scratch&#9;ACTION&#9;NewScratchBuffer&#10;project&#9;ACTION&#9;ActivateProjectToolWindow" />
     <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -400,8 +523,10 @@
       <workItem from="1504481149340" duration="14133000" />
       <workItem from="1504570856711" duration="11000" />
       <workItem from="1504570962709" duration="19972000" />
-      <workItem from="1504598171087" duration="7216000" />
-      <workItem from="1504697999111" duration="436000" />
+      <workItem from="1504598171087" duration="7548000" />
+      <workItem from="1504651897619" duration="1257000" />
+      <workItem from="1504654097466" duration="6483000" />
+      <workItem from="1504699102295" duration="8262000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -515,18 +640,95 @@
       <option name="project" value="LOCAL" />
       <updated>1504594548360</updated>
     </task>
-    <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/callin2/fantastic_graph&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1504698388331</created>
+    <task id="LOCAL-00017" summary="demo">
+      <created>1504605494270</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1504698388331</updated>
+      <updated>1504605494270</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="demo">
+      <created>1504654877144</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1504654877144</updated>
+    </task>
+    <task id="LOCAL-00019" summary="demo">
+      <created>1504655675015</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1504655675015</updated>
+    </task>
+    <task id="LOCAL-00020" summary="demo">
+      <created>1504655776194</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1504655776194</updated>
+    </task>
+    <task id="LOCAL-00021" summary="data">
+      <created>1504655857864</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1504655857864</updated>
+    </task>
+    <task id="LOCAL-00022" summary="data">
+      <created>1504655915773</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1504655915773</updated>
+    </task>
+    <task id="LOCAL-00023" summary="data">
+      <created>1504655934861</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1504655934861</updated>
+    </task>
+    <task id="LOCAL-00024" summary="data">
+      <created>1504657849383</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1504657849383</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fitzoom">
+      <created>1504677010888</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1504677010888</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fitzoom">
+      <created>1504677893589</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1504677893589</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fitzoom">
+      <created>1504681609096</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1504681609096</updated>
+    </task>
+    <task id="LOCAL-00028" summary="filter">
+      <created>1504682972178</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1504682972178</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159486000" />
+    <option name="totallyTimeSpent" value="178205000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,17 +743,18 @@
     <frame x="1920" y="24" width="1920" height="2136" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19337606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21634616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5565032" sideWeight="0.5101496" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3009307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564633" sideWeight="0.51231265" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3009307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11964107" sideWeight="0.48985043" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564633" sideWeight="0.49464667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2557328" sideWeight="0.48768738" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564633" sideWeight="0.49464667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -624,8 +827,11 @@
     <MESSAGE value="grouping bug fix" />
     <MESSAGE value="layout 추가 &#10;- euler&#10;- cola" />
     <MESSAGE value="bug fix" />
-    <MESSAGE value="Merge branch 'master' of https://github.com/callin2/fantastic_graph&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/callin2/fantastic_graph&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="demo" />
+    <MESSAGE value="data" />
+    <MESSAGE value="fitzoom" />
+    <MESSAGE value="filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -634,23 +840,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/DemoApp.js" />
-    <entry file="file://$PROJECT_DIR$/src/util/gexf.ts" />
-    <entry file="file://$PROJECT_DIR$/navigator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2624">
-          <caret line="164" column="6" lean-forward="false" selection-start-line="164" selection-start-column="6" selection-end-line="164" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/fontawesome/index.js" />
-    <entry file="file://$PROJECT_DIR$/data/EuroSiSPays.gexf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md" />
     <entry file="file://$PROJECT_DIR$/data/dh11.gexf">
       <provider selected="true" editor-type-id="text-editor">
@@ -679,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,14 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,27 +937,118 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ext/ogma.min.js" />
-    <entry file="file://$PROJECT_DIR$/data/github.gexf" />
-    <entry file="file://$PROJECT_DIR$/ogma_example/concentric.html">
+    <entry file="file://$PROJECT_DIR$/data/github.gexf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="128">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="25" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ogma_example/concentric.html" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ogma_example/github_performance.html" />
+    <entry file="file://$PROJECT_DIR$/cyto/fitzoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/Filter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="44" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cyto/filter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cyto/node_select.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-840">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cyto/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/gal.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="17281" column="24" lean-forward="false" selection-start-line="17281" selection-start-column="9" selection-end-line="17281" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/widget.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#select#0;n#label#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -785,86 +1056,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cyto/styling_by_prop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="460">
+          <caret line="164" column="10" lean-forward="true" selection-start-line="162" selection-start-column="8" selection-end-line="164" selection-end-column="10" />
           <folding>
             <element signature="e#65#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ogma_example/github_performance.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/gal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11576" column="12" lean-forward="false" selection-start-line="11576" selection-start-column="12" selection-end-line="11576" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cyto/fitzoom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="52" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/navex.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1580">
-          <caret line="79" column="54" lean-forward="false" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+        <state relative-caret-position="271">
+          <caret line="411" column="19" lean-forward="false" selection-start-line="411" selection-start-column="13" selection-end-line="411" selection-end-column="19" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#2936#3599#0" expanded="false" />
+            <element signature="e#3089#3752#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cyto/node_select.html">
+    <entry file="file://$PROJECT_DIR$/src/demo/Styling.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="312">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
           <folding />
         </state>
       </provider>

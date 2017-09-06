@@ -31,7 +31,7 @@ class NodeSelect extends Application {
             ]
         })
 
-        this.agw.loadJson('/data/gal.json').then(()=>{
+        this.agw.loadJson('data/gal.json').then(()=>{
             this.agw.cy.style()
                 .selector('node')
                 .style({
