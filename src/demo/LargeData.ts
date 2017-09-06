@@ -28,16 +28,22 @@ class LargeData extends Application {
             ]
         })
 
+        console.time('loadgexf')
         this.agw.loadGexf('data/github.gexf').then(()=>{
 
-            console.log('loadgexf complete')
+            console.timeEnd('loadgexf')
             this.agw.setLayout('euler')
         })
+    }
+
+    fit() {
+        this.agw.cy.fit()
     }
 
 
 }
 
 window.addEventListener('load',()=>{
+    console.log("onLoad");
     new LargeData(document.querySelector("body"))
 })

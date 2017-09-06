@@ -34,6 +34,7 @@ class FitZoom extends Application {
                 .update();
 
             this.agw.setLayout('euler')
+            this.agw.cy.fit()
         })
     }
 
