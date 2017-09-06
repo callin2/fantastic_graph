@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c567e78-b0a6-4cd9-aa22-50d8a212f8a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cyto/fitzoom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cyto/node_select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/ccnr-universe-fa2-ncolorModularity-nsizeBeteewnessCentrality.gexf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ogma_example/concentric.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ogma_example/github_performance.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/FitZoom.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/NodeSelect.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DemoApp.ts" afterPath="$PROJECT_DIR$/src/DemoApp.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navex.ts" afterPath="$PROJECT_DIR$/src/navex.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,17 +22,16 @@
     <favorites_list name="proto-01" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49893692">
+    <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="DemoApp.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="64">
-                  <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+                <state relative-caret-position="180">
+                  <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
                   <folding>
                     <element signature="e#65#105#0" expanded="true" />
-                    <marker date="1504599191101" expanded="true" signature="4421:4490" ph="//..." />
                   </folding>
                 </state>
               </provider>
@@ -52,11 +40,9 @@
           <file leaf-file-name="concentric.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ogma_example/concentric.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="385">
-                  <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="34" />
-                  <folding>
-                    <marker date="1504597428712" expanded="true" signature="1125:1132" ph="..." />
-                  </folding>
+                <state relative-caret-position="720">
+                  <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="34" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -64,11 +50,9 @@
           <file leaf-file-name="github_performance.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ogma_example/github_performance.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="257">
-                  <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-                  <folding>
-                    <marker date="1504599031984" expanded="true" signature="2697:2704" ph="..." />
-                  </folding>
+                <state relative-caret-position="1460">
+                  <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -76,14 +60,11 @@
           <file leaf-file-name="navex.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/navex.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="79" column="54" lean-forward="true" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+                <state relative-caret-position="1580">
+                  <caret line="79" column="54" lean-forward="false" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                     <element signature="e#2936#3599#0" expanded="false" />
-                    <marker date="1504603758509" expanded="true" signature="3096:3148" ph="{...}" />
-                    <marker date="1504603758509" expanded="true" signature="3171:3222" ph="{...}" />
-                    <marker date="1504603758509" expanded="true" signature="9271:9444" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -92,28 +73,28 @@
           <file leaf-file-name="node_select.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cyto/node_select.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
+                <state relative-caret-position="460">
                   <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="NodeSelect.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="NodeSelect.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+                <state relative-caret-position="180">
+                  <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+                <state relative-caret-position="660">
+                  <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -122,8 +103,8 @@
           <file leaf-file-name="fitzoom.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cyto/fitzoom.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="18" column="52" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="52" />
+                <state relative-caret-position="360">
+                  <caret line="18" column="52" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -132,8 +113,8 @@
           <file leaf-file-name="ccnr-universe-fa2-ncolorModularity-nsizeBeteewnessCentrality.gexf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data/ccnr-universe-fa2-ncolorModularity-nsizeBeteewnessCentrality.gexf">
               <provider selected="true" editor-type-id="LargeFileEditor">
-                <state relative-caret-position="224">
-                  <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+                <state relative-caret-position="280">
+                  <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -141,45 +122,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="widget.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/widget.html">
+        <leaf>
+          <file leaf-file-name="NodeSelect.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#select#0;n#label#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webpack.config.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/data.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FitZoom.ts" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+                <state relative-caret-position="440">
+                  <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -313,11 +261,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1969" />
-    <option name="y" value="42" />
-    <option name="width" value="1548" />
-    <option name="height" value="990" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="1920" />
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="2136" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -335,46 +283,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="proto-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-01" type="462c0819:PsiDirectoryNode" />
-              <item name="cyto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-01" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="navex.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="fantastic_graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fantastic_graph" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,6 +401,7 @@
       <workItem from="1504570856711" duration="11000" />
       <workItem from="1504570962709" duration="19972000" />
       <workItem from="1504598171087" duration="7216000" />
+      <workItem from="1504697999111" duration="436000" />
     </task>
     <task id="LOCAL-00001" summary="webpack init">
       <created>1503525115606</created>
@@ -593,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504594548360</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/callin2/fantastic_graph&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1504698388331</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1504698388331</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159050000" />
+    <option name="totallyTimeSpent" value="159486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,19 +538,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1969" y="42" width="1891" height="1098" extended-state="6" />
+    <frame x="1920" y="24" width="1920" height="2136" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24464668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2564633" sideWeight="0.50803" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3009307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2564633" sideWeight="0.49197003" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564633" sideWeight="0.49464667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19337606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5565032" sideWeight="0.5101496" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3009307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11964107" sideWeight="0.48985043" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564633" sideWeight="0.49464667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -654,20 +583,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/util/lq.js" />
-        <option value="$PROJECT_DIR$/../importData/src/agens.js" />
-        <option value="$PROJECT_DIR$/../importData/src/agens.js.map" />
-        <option value="$PROJECT_DIR$/../importData/src/wait.js" />
-        <option value="$PROJECT_DIR$/../importData/src/wait.js.map" />
-        <option value="$PROJECT_DIR$/src/util/lq.js.map" />
-        <option value="$PROJECT_DIR$/src/navex.js.map" />
-        <option value="$PROJECT_DIR$/src/DemoApp.js" />
-        <option value="$PROJECT_DIR$/src/DemoApp.js.map" />
-        <option value="$PROJECT_DIR$/src/navex.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -709,7 +624,8 @@
     <MESSAGE value="grouping bug fix" />
     <MESSAGE value="layout 추가 &#10;- euler&#10;- cola" />
     <MESSAGE value="bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/callin2/fantastic_graph&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/callin2/fantastic_graph&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -718,13 +634,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/DemoApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11269" column="17" lean-forward="false" selection-start-line="11269" selection-start-column="17" selection-end-line="11269" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/DemoApp.js" />
     <entry file="file://$PROJECT_DIR$/src/util/gexf.ts" />
     <entry file="file://$PROJECT_DIR$/navigator.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,13 +643,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/fontawesome/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fontawesome/index.js" />
     <entry file="file://$PROJECT_DIR$/data/EuroSiSPays.gexf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -747,16 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="96">
-            <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md" />
     <entry file="file://$PROJECT_DIR$/data/dh11.gexf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -772,62 +667,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/t01_layout.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-cola/cola.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-cola/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="59" column="64" lean-forward="true" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-cola/cytoscape-cola.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/example-graphs/compound.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="0" column="1277" lean-forward="false" selection-start-line="0" selection-start-column="1277" selection-end-line="0" selection-end-column="1277" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/example-graphs/planar-chain.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4220">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-cola/cola.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/demo.html" />
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-cola/demo.html" />
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-cola/cytoscape-cola.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/example-graphs/compound.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/example-graphs/planar-chain.json" />
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -836,13 +683,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/example-graphs/gal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cytoscape-euler/example-graphs/gal.json" />
     <entry file="file://$PROJECT_DIR$/src/Application.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -865,19 +706,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="140">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/eventemitter3/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="61" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/eventemitter3/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/ext/dat.gui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -892,13 +727,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/buffer2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/buffer2" />
     <entry file="file://$PROJECT_DIR$/data/diseasome_10000.gexf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1111">
@@ -910,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="20937" column="46" lean-forward="true" selection-start-line="20937" selection-start-column="46" selection-end-line="20937" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,33 +751,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/ccnr-universe-fa2-ncolorModularity-nsizeBeteewnessCentrality.gexf">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="224">
-          <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        <state relative-caret-position="280">
+          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ogma.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="287" lean-forward="true" selection-start-line="4" selection-start-column="287" selection-end-line="4" selection-end-column="287" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/github.gexf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/ogma.min.js" />
+    <entry file="file://$PROJECT_DIR$/data/github.gexf" />
     <entry file="file://$PROJECT_DIR$/ogma_example/concentric.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <marker date="1504597428712" expanded="true" signature="1125:1132" ph="..." />
-          </folding>
+        <state relative-caret-position="720">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -963,8 +776,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/widget.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state relative-caret-position="2280">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#select#0;n#label#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -972,32 +785,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DemoApp.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="180">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#65#105#0" expanded="true" />
-            <marker date="1504599191101" expanded="true" signature="4421:4490" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ogma_example/github_performance.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
-          <folding>
-            <marker date="1504599031984" expanded="true" signature="2697:2704" ph="..." />
-          </folding>
+        <state relative-caret-position="1460">
+          <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,13 +807,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="11576" column="12" lean-forward="false" selection-start-line="11576" selection-start-column="12" selection-end-line="11576" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="140">
           <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding />
         </state>
@@ -1019,37 +820,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cyto/fitzoom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="360">
+          <caret line="18" column="52" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/FitZoom.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        <state relative-caret-position="160">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/navex.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="79" column="54" lean-forward="true" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+        <state relative-caret-position="1580">
+          <caret line="79" column="54" lean-forward="false" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="e#2936#3599#0" expanded="false" />
-            <marker date="1504603758509" expanded="true" signature="3096:3148" ph="{...}" />
-            <marker date="1504603758509" expanded="true" signature="3171:3222" ph="{...}" />
-            <marker date="1504603758509" expanded="true" signature="9271:9444" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cyto/node_select.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="460">
           <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
@@ -1057,8 +855,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/NodeSelect.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="180">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding />
         </state>
       </provider>
